@@ -2,7 +2,7 @@
 ### Chuẩn Chương Trình GDPT 2018 (Kết Nối Tri Thức, Cánh Diều, Chân Trời Sáng Tạo)
 
 🌐 **Trải nghiệm trực tuyến tại GitHub Pages:**  
-👉 **[https://pvhdtg-dev.github.io/hoa-hoc-10/](https://pvhdtg-dev.github.io/hoa-hoc-10/)**
+👉 **[https://pvhdtg-dev.github.io/hoa-10/](https://pvhdtg-dev.github.io/hoa-10/)**
 
 ---
 
@@ -68,8 +68,8 @@
 ---
 
 ## 🌐 Hướng Dẫn Bật GitHub Pages Sau Khi Push
-1. Truy cập vào kho lưu trữ trên GitHub: `https://github.com/pvhdtg-dev/hoa-hoc-10`.
+1. Truy cập vào kho lưu trữ trên GitHub: `https://github.com/pvhdtg-dev/hoa-10`.
 2. Vào mục **Settings** -> Chọn tab **Pages** ở thanh menu bên trái.
 3. Ở phần **Build and deployment** -> **Branch**: Chọn nhánh `main` và thư mục `/(root)`.
 4. Nhấn **Save**. Sau 1-2 phút, ứng dụng sẽ hoạt động tại:  
-   👉 **`https://pvhdtg-dev.github.io/hoa-hoc-10/`**
+   👉 **`https://pvhdtg-dev.github.io/hoa-10/`**

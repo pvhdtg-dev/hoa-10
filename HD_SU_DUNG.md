@@ -55,10 +55,10 @@ Bạn có 2 cách cực kỳ đơn giản để mở ứng dụng trên máy tí
 ---
 
 ## 🚀 3. Đẩy Lên GitHub & Cài Đặt GitHub Pages
-1. Tạo một repository mới trên GitHub với tên **`hoa-hoc-10`** (chọn chế độ **Public**).
+1. Đảm bảo repository trên GitHub đã được tạo với tên **`hoa-10`** (chọn chế độ **Public**).
 2. Nhấp đúp vào file **`Day_Len_Github.bat`** trong thư mục này. Quá trình push code sẽ diễn ra hoàn toàn tự động.
 3. Sau khi push thành công:
-   - Truy cập vào: `https://github.com/pvhdtg-dev/hoa-hoc-10/settings/pages`
+   - Truy cập vào: `https://github.com/pvhdtg-dev/hoa-10/settings/pages`
    - Tại mục **Branch**, chọn nhánh `main` và thư mục `/(root)` -> Nhấn **Save**.
    - Đợi 1-2 phút, ứng dụng của bạn sẽ chính thức online tại:  
-     👉 **`https://pvhdtg-dev.github.io/hoa-hoc-10/`**
+     👉 **`https://pvhdtg-dev.github.io/hoa-10/`**
