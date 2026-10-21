@@ -213,8 +213,8 @@ function renderSelectedLesson() {
             ${lesson.keyFormulas.map(f => `
               <div class="p-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
                 <span class="text-xs font-semibold text-slate-500 block mb-1">${f.name}</span>
-                <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 font-mono py-1">
-                  $$${f.formula}$$
+                <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 py-1 overflow-x-auto">
+                  ${formatLatex(f.formula, true)}
                 </div>
               </div>
             `).join('')}
@@ -730,8 +730,8 @@ function renderFormulasTab() {
         ${cat.items.map(item => `
           <div class="p-3 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-1">
             <span class="font-bold text-slate-800 dark:text-slate-200">${item.name}</span>
-            <div class="text-sm font-mono text-indigo-600 dark:text-indigo-400 py-1 font-bold">
-              $$${item.formula}$$
+            <div class="text-sm font-bold text-indigo-600 dark:text-indigo-400 py-1 overflow-x-auto">
+              ${formatLatex(item.formula, true)}
             </div>
             <p class="text-slate-400 text-[11px] italic">${item.note}</p>
           </div>
@@ -771,16 +771,122 @@ function handleGlobalSearch(keyword) {
 // 9. TIỆN ÍCH KATEX & PHÁO HOA (CONFETTI)
 // ==========================================================================
 
-function triggerKaTeX() {
-  if (typeof renderMathInElement === "function") {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false }
-      ],
-      throwOnError: false
-    });
+// Hàm render công thức LaTeX tức thì thành HTML bằng KaTeX
+function formatLatex(tex, isDisplay = true) {
+  if (!tex) return "";
+  let cleanTex = tex.trim();
+  if (cleanTex.startsWith("$$") && cleanTex.endsWith("$$")) {
+    cleanTex = cleanTex.slice(2, -2).trim();
+  } else if (cleanTex.startsWith("$") && cleanTex.endsWith("$")) {
+    cleanTex = cleanTex.slice(1, -1).trim();
   }
+
+  if (window.katex && typeof window.katex.renderToString === "function") {
+    try {
+      return window.katex.renderToString(cleanTex, {
+        displayMode: isDisplay,
+        throwOnError: false
+      });
+    } catch (e) {
+      console.warn("KaTeX render error:", e);
+    }
+  }
+  return isDisplay ? `$$${cleanTex}$$` : `$${cleanTex}$`;
+}
+
+// Duyệt cây DOM và render các đoạn $...$ và $$...$$ còn lại trong văn bản
+function walkAndRenderMath(root) {
+  if (!window.katex || typeof window.katex.renderToString !== "function") return;
+  
+  const walker = document.createTreeWalker(
+    root,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode: function(node) {
+        if (!node.nodeValue || !node.nodeValue.includes('$')) return NodeFilter.FILTER_REJECT;
+        const parent = node.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        const tag = parent.tagName.toLowerCase();
+        if (['script', 'style', 'textarea', 'code', 'pre'].includes(tag) || parent.closest('.katex')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    },
+    false
+  );
+
+  const textNodes = [];
+  let n;
+  while ((n = walker.nextNode())) {
+    textNodes.push(n);
+  }
+
+  textNodes.forEach(node => {
+    const text = node.nodeValue;
+    const regex = /(\$\$[\s\S]+?\$\$|\$(?!\$)[^$\n]+?\$)/g;
+    if (!regex.test(text)) return;
+    regex.lastIndex = 0;
+
+    const span = document.createElement('span');
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        span.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+      }
+      const raw = match[0];
+      const isDisplay = raw.startsWith('$$');
+      const formula = isDisplay ? raw.slice(2, -2).trim() : raw.slice(1, -1).trim();
+
+      try {
+        const mathEl = document.createElement('span');
+        mathEl.innerHTML = window.katex.renderToString(formula, {
+          displayMode: isDisplay,
+          throwOnError: false
+        });
+        span.appendChild(mathEl);
+      } catch (e) {
+        span.appendChild(document.createTextNode(raw));
+      }
+      lastIndex = regex.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      span.appendChild(document.createTextNode(text.substring(lastIndex)));
+    }
+
+    if (node.parentNode) {
+      node.parentNode.replaceChild(span, node);
+    }
+  });
+}
+
+function triggerKaTeX(container) {
+  const root = container || document.body;
+
+  // 1. Thử dùng renderMathInElement chính thức nếu có
+  if (typeof renderMathInElement === "function") {
+    try {
+      renderMathInElement(root, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true }
+        ],
+        ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code", "option"],
+        throwOnError: false
+      });
+      return;
+    } catch (err) {
+      console.warn("renderMathInElement error, falling back to manual walker:", err);
+    }
+  }
+
+  // 2. Fallback thủ công nếu renderMathInElement chưa sẵn sàng
+  walkAndRenderMath(root);
 }
 
 function launchConfetti() {

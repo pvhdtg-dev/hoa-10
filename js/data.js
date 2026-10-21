@@ -710,27 +710,27 @@ const FORMULAS_DATA = [
     category: "Cấu tạo nguyên tử",
     items: [
       { name: "Số khối hạt nhân", formula: "A = Z + N", note: "Z: số proton (= số e); N: số neutron" },
-      { name: "Khối lượng xấp xỉ của nguyên tử", formula: "m_{\\text{nguyên tử}} \\approx m_{\\text{hạt nhân}} \\approx A \\text{ (amu)}", note: "1 amu ≈ 1.6605 × 10⁻²⁷ kg" },
+      { name: "Khối lượng xấp xỉ của nguyên tử", formula: "m_{\\text{atom}} \\approx m_{\\text{nucleus}} \\approx A \\text{ (amu)}", note: "1 amu ≈ 1.6605 × 10⁻²⁷ kg" },
       { name: "Nguyên tử khối trung bình", formula: "\\overline{A} = \\frac{A_1 x_1 + A_2 x_2 + \\dots + A_k x_k}{100}", note: "x_k là phần trăm số nguyên tử của đồng vị thứ k" },
       { name: "Hệ thức chặn tỉ lệ neutron/proton", formula: "1 \\le \\frac{N}{Z} \\le 1.5 \\iff \\frac{S}{3.5} \\le Z \\le \\frac{S}{3}", note: "Áp dụng với các nguyên tố bền có Z ≤ 82, S = 2Z + N" },
-      { name: "Số electron tối đa trong lớp n", formula: "N_{\\text{max}} = 2n^2", note: "Áp dụng với n ≤ 4 (K=2, L=8, M=18, N=32)" }
+      { name: "Số electron tối đa trong lớp n", formula: "N_{\\text{max}} = 2n^2 \\quad (n \\le 4)", note: "Áp dụng với n ≤ 4 (K=2, L=8, M=18, N=32)" }
     ]
   },
   {
     category: "Bảng tuần hoàn & Định luật tuần hoàn",
     items: [
-      { name: "Xác định ô nguyên tố", formula: "\\text{Số thứ tự ô} = Z = \\text{Số proton} = \\text{Số electron}", note: "Điện tích hạt nhân bằng +Z" },
-      { name: "Xác định chu kỳ", formula: "\\text{Số thứ tự chu kỳ} = \\text{Số lớp electron}", note: "BTH có 7 chu kỳ (3 chu kỳ nhỏ, 4 chu kỳ lớn)" },
-      { name: "Xác định nhóm A", formula: "\\text{Số thứ tự nhóm A} = \\text{Số electron lớp ngoài cùng}", note: "Nguyên tố s và p" },
-      { name: "Hóa trị cao nhất với Oxygen", formula: "\\text{Hóa trị cao nhất với O} = n \\text{ (Số thứ tự nhóm A)}", note: "Công thức oxide cao nhất: R₂Oₙ hoặc RO_{n/2}" },
-      { name: "Hóa trị với Hydrogen", formula: "\\text{Hóa trị với H} = 8 - n \\quad (4 \\le n \\le 7)", note: "Áp dụng cho phi kim từ nhóm IVA đến VIIA" }
+      { name: "Xác định ô nguyên tố", formula: "\\text{STT Ô} = Z = p = e", note: "Điện tích hạt nhân bằng +Z" },
+      { name: "Xác định chu kỳ", formula: "\\text{Chu kỳ} = n_{\\text{lớp e}}", note: "BTH có 7 chu kỳ (3 chu kỳ nhỏ, 4 chu kỳ lớn)" },
+      { name: "Xác định nhóm A", formula: "\\text{Nhóm A} = n_{e \\text{ hóa trị}}", note: "Nguyên tố s và p (electron lớp ngoài cùng)" },
+      { name: "Hóa trị cao nhất với Oxygen", formula: "\\text{Hóa trị (O)} = n \\implies \\text{R}_2\\text{O}_n", note: "n là số thứ tự nhóm A (với n lẻ: R₂Oₙ; n chẵn: RO_{n/2})" },
+      { name: "Hóa trị với Hydrogen", formula: "\\text{Hóa trị (H)} = 8 - n \\implies \\text{RH}_{8-n}", note: "Áp dụng cho phi kim từ nhóm IVA đến VIIA (4 ≤ n ≤ 7)" }
     ]
   },
   {
     category: "Liên kết hóa học",
     items: [
-      { name: "Hiệu độ âm điện & Bản chất liên kết", formula: "\\Delta\\chi = \\chi_B - \\chi_A", note: "Δχ < 0.4: KHT không cực; 0.4 ≤ Δχ < 1.7: KHT có cực; Δχ ≥ 1.7: Liên kết ion" },
-      { name: "Quy tắc Octet (Bát tử)", formula: "ns^2 np^6 \\quad \\text{(Đạt 8e lớp ngoài cùng như khí hiếm)}", note: "Ngoại trừ Helium đạt 2e (1s²)" }
+      { name: "Hiệu độ âm điện & Bản chất liên kết", formula: "\\Delta\\chi = |\\chi_B - \\chi_A|", note: "Δχ < 0.4: KHT không cực; 0.4 ≤ Δχ < 1.7: KHT có cực; Δχ ≥ 1.7: Liên kết ion" },
+      { name: "Quy tắc Octet (Bát tử)", formula: "ns^2 np^6 \\quad (\\text{Bát tử: 8e lớp ngoài cùng})", note: "Ngoại trừ Helium đạt 2e bền vững (1s²)" }
     ]
   }
 ];
