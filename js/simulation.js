@@ -416,17 +416,44 @@ function startBohrCanvasAnimation() {
   if (!canvas) return;
   const ctx = canvas.getContext("2d");
 
+  const subtabBohr = document.getElementById("sim-subtab-bohr");
+  if (subtabBohr && subtabBohr.classList.contains("hidden")) {
+    if (bohrAnimationId) {
+      cancelAnimationFrame(bohrAnimationId);
+      bohrAnimationId = null;
+    }
+    return;
+  }
+
   // Đảm bảo canvas sắc nét trên màn hình Retina/High-DPI
-  const dpr = window.devicePixelRatio || 1;
-  const width = canvas.clientWidth || 360;
-  const height = canvas.clientHeight || 360;
-  canvas.width = width * dpr;
-  canvas.height = height * dpr;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const rect = canvas.getBoundingClientRect();
+  const displayWidth = rect.width > 0 ? rect.width : (canvas.clientWidth || 360);
+  const displayHeight = rect.height > 0 ? rect.height : (canvas.clientHeight || displayWidth || 360);
+  const width = Math.min(displayWidth, 360);
+  const height = Math.min(displayHeight, 360);
+
+  canvas.width = Math.round(width * dpr);
+  canvas.height = Math.round(height * dpr);
+
+  if (ctx.resetTransform) {
+    ctx.resetTransform();
+  } else {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+  }
   ctx.scale(dpr, dpr);
 
   let angle = 0;
 
   function renderFrame() {
+    if (subtabBohr && subtabBohr.classList.contains("hidden")) {
+      if (bohrAnimationId) {
+        cancelAnimationFrame(bohrAnimationId);
+        bohrAnimationId = null;
+      }
+      return;
+    }
+
     ctx.clearRect(0, 0, width, height);
 
     const centerX = width / 2;
@@ -663,9 +690,31 @@ function switchSimulationSubTab(tab) {
   const target = document.getElementById(`sim-subtab-${tab}`);
   if (target) target.classList.remove("hidden");
 
+  // Luôn reset cuộn ngang về 0 để tránh bảng tuần hoàn kéo trôi màn hình
+  window.scrollTo({ left: 0, top: 0, behavior: "instant" });
+
   if (tab === "bohr") {
     setTimeout(startBohrCanvasAnimation, 50);
-  } else if (tab === "periodic") {
-    setTimeout(initPeriodicTable, 50);
+  } else {
+    // Dừng loop canvas Bohr khi không hiển thị tab Bohr
+    if (bohrAnimationId) {
+      cancelAnimationFrame(bohrAnimationId);
+      bohrAnimationId = null;
+    }
+    if (tab === "periodic") {
+      setTimeout(initPeriodicTable, 50);
+    }
   }
 }
+
+// Lắng nghe thay đổi kích thước cửa sổ để vẽ lại Canvas sắc nét
+let bohrResizeTimer = null;
+window.addEventListener("resize", () => {
+  clearTimeout(bohrResizeTimer);
+  bohrResizeTimer = setTimeout(() => {
+    const subtabBohr = document.getElementById("sim-subtab-bohr");
+    if (subtabBohr && !subtabBohr.classList.contains("hidden")) {
+      startBohrCanvasAnimation();
+    }
+  }, 120);
+});

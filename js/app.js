@@ -145,13 +145,20 @@ function switchTab(tab) {
 
   if (tab === "simulations") {
     setTimeout(() => {
-      if (typeof initPeriodicTable === "function") initPeriodicTable();
-      if (typeof startBohrCanvasAnimation === "function") startBohrCanvasAnimation();
+      const activeSubtab = document.querySelector(".sim-subtab-btn.bg-emerald-600");
+      const subtabName = activeSubtab ? activeSubtab.dataset.subtab : "periodic";
+      if (subtabName === "periodic" && typeof initPeriodicTable === "function") initPeriodicTable();
+      if (subtabName === "bohr" && typeof startBohrCanvasAnimation === "function") startBohrCanvasAnimation();
     }, 50);
+  } else {
+    if (typeof bohrAnimationId !== "undefined" && bohrAnimationId) {
+      cancelAnimationFrame(bohrAnimationId);
+      bohrAnimationId = null;
+    }
   }
 
   triggerKaTeX();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
 // ==========================================================================

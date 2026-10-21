@@ -248,17 +248,17 @@
 
       <!-- SUB-TAB 2: MÔ PHỎNG NGUYÊN TỬ BOHR -->
       <div id="sim-subtab-bohr" class="sim-subtab-content hidden space-y-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="bohr-layout">
           <!-- Canvas Display -->
-          <div class="lg:col-span-7 glass-card rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col items-center justify-center space-y-4">
+          <div class="glass-card rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col items-center justify-between space-y-4 min-w-0">
             <div class="flex items-center justify-between w-full">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Mô hình Rutherford - Bohr</span>
               <span id="bohr-element-type-badge" class="px-2.5 py-0.5 rounded-full text-xs font-bold border">Kim loại</span>
             </div>
 
             <!-- Canvas Container -->
-            <div class="relative w-full max-w-[360px] aspect-square flex items-center justify-center">
-              <canvas id="bohr-canvas" class="w-full h-full rounded-2xl bg-slate-950 border border-slate-800 shadow-inner"></canvas>
+            <div class="bohr-canvas-container">
+              <canvas id="bohr-canvas" class="rounded-2xl bg-slate-950 border border-slate-800 shadow-inner"></canvas>
             </div>
 
             <div id="bohr-shells-text" class="flex flex-wrap items-center justify-center gap-2">
@@ -267,9 +267,9 @@
           </div>
 
           <!-- Controls & Information -->
-          <div class="lg:col-span-5 glass-card rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+          <div class="glass-card rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5 min-w-0">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-emerald-500">Thông Số Nguyên Tử</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-500 whitespace-nowrap">Thông Số Nguyên Tử</span>
               <h3 id="bohr-element-name" class="text-xl font-black text-slate-900 dark:text-slate-100 mt-1">Sodium (Na) - Z = 11</h3>
               <p id="bohr-element-config" class="text-xs font-mono font-bold text-indigo-500 dark:text-indigo-400 mt-0.5">[Ne] 3s¹</p>
             </div>

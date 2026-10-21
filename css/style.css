@@ -7,6 +7,12 @@
   --warning: #f59e0b;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
@@ -14,6 +20,9 @@ body {
 
 /* Periodic Table 18-column grid & 118 Elements */
 .periodic-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 10px;
@@ -324,4 +333,68 @@ body {
 /* Canvas styling */
 canvas {
   touch-action: none;
+}
+
+/* ==========================================================================
+   Responsive Grid & Utility Fallbacks (Ensures complete layout integrity)
+   ========================================================================== */
+.aspect-square {
+  aspect-ratio: 1 / 1 !important;
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-1 { grid-column: span 1 / span 1 !important; }
+  .lg\:col-span-2 { grid-column: span 2 / span 2 !important; }
+  .lg\:col-span-3 { grid-column: span 3 / span 3 !important; }
+  .lg\:col-span-4 { grid-column: span 4 / span 4 !important; }
+  .lg\:col-span-5 { grid-column: span 5 / span 5 !important; }
+  .lg\:col-span-6 { grid-column: span 6 / span 6 !important; }
+  .lg\:col-span-7 { grid-column: span 7 / span 7 !important; }
+  .lg\:col-span-8 { grid-column: span 8 / span 8 !important; }
+  .lg\:col-span-9 { grid-column: span 9 / span 9 !important; }
+  .lg\:col-span-10 { grid-column: span 10 / span 10 !important; }
+  .lg\:col-span-11 { grid-column: span 11 / span 11 !important; }
+  .lg\:col-span-12 { grid-column: span 12 / span 12 !important; }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-1 { grid-column: span 1 / span 1 !important; }
+  .md\:col-span-2 { grid-column: span 2 / span 2 !important; }
+  .md\:col-span-3 { grid-column: span 3 / span 3 !important; }
+  .md\:col-span-4 { grid-column: span 4 / span 4 !important; }
+  .md\:col-span-5 { grid-column: span 5 / span 5 !important; }
+  .md\:col-span-6 { grid-column: span 6 / span 6 !important; }
+}
+
+/* Bohr simulation layout styles */
+.bohr-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .bohr-layout {
+    grid-template-columns: minmax(0, 7fr) minmax(320px, 5fr);
+  }
+}
+
+.bohr-canvas-container {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bohr-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 360px;
+  max-height: 360px;
+  display: block;
 }
