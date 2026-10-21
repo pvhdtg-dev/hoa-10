@@ -145,7 +145,7 @@ function switchTab(tab) {
 
   if (tab === "simulations") {
     setTimeout(() => {
-      if (typeof renderPeriodicTableGrid === "function") renderPeriodicTableGrid();
+      if (typeof initPeriodicTable === "function") initPeriodicTable();
       if (typeof startBohrCanvasAnimation === "function") startBohrCanvasAnimation();
     }, 50);
   }

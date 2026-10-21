@@ -186,51 +186,63 @@
         </button>
       </div>
 
-      <!-- SUB-TAB 1: BẢNG TUẦN HOÀN TƯƠNG TÁC -->
-      <div id="sim-subtab-periodic" class="sim-subtab-content space-y-6">
-        <!-- Periodic Table Controls & Heatmap -->
+      <!-- SUB-TAB 1: BẢNG TUẦN HOÀN 118 NGUYÊN TỐ TƯƠNG TÁC -->
+      <div id="sim-subtab-periodic" class="sim-subtab-content space-y-4">
         <div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+          <!-- Header & Search Controls -->
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
             <div>
               <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 flex items-center gap-2">
-                <span>🌐</span> Bảng Tuần Hoàn Các Nguyên Tố Hóa Học (IUPAC)
+                <span>⚛️</span> Bảng Tuần Hoàn Các Nguyên Tố Hóa Học (IUPAC)
               </h3>
-              <p class="text-xs text-slate-500 dark:text-slate-400">Nhấn vào bất kỳ nguyên tố nào để xem thẻ thông số và mở mô phỏng lớp vỏ nguyên tử.</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400">118 nguyên tố • Nhấp vào bất kỳ nguyên tố nào để xem thông số chi tiết và mở mô phỏng Bohr</p>
             </div>
 
-            <!-- Heatmap Buttons -->
-            <div class="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 text-xs">
-              <span class="text-slate-400 font-bold px-2 text-[10px] uppercase">Chế độ xem:</span>
-              <button data-mode="category" onclick="setHeatmapMode('category')" class="heatmap-btn px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow-sm transition">Phân loại</button>
-              <button data-mode="en" onclick="setHeatmapMode('en')" class="heatmap-btn px-2.5 py-1 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">Độ âm điện</button>
-              <button data-mode="radius" onclick="setHeatmapMode('radius')" class="heatmap-btn px-2.5 py-1 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">Bán kính</button>
-              <button data-mode="state" onclick="setHeatmapMode('state')" class="heatmap-btn px-2.5 py-1 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">Thể (25°C)</button>
+            <div class="relative w-full md:w-72">
+              <input type="text" id="pt-search" placeholder="🔍 Tìm kiếm (tên, ký hiệu, số hiệu)..." 
+                class="w-full bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-xl px-3.5 py-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-emerald-500 shadow-inner" />
             </div>
           </div>
 
-          <!-- Quick Filters by Group Category -->
-          <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1 text-xs">
-            <button onclick="filterPeriodicTable('all')" class="px-2.5 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 font-semibold hover:bg-emerald-500 hover:text-white transition whitespace-nowrap">Tất cả</button>
-            <button onclick="filterPeriodicTable('alkali')" class="px-2.5 py-1 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold whitespace-nowrap">Kim loại kiềm</button>
-            <button onclick="filterPeriodicTable('alkaline')" class="px-2.5 py-1 rounded-lg bg-orange-500/20 text-orange-300 border border-orange-500/40 font-semibold whitespace-nowrap">Kiềm thổ</button>
-            <button onclick="filterPeriodicTable('transition')" class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 font-semibold whitespace-nowrap">Chuyển tiếp</button>
-            <button onclick="filterPeriodicTable('metalloid')" class="px-2.5 py-1 rounded-lg bg-teal-500/20 text-teal-300 border border-teal-500/40 font-semibold whitespace-nowrap">Á kim</button>
-            <button onclick="filterPeriodicTable('nonmetal')" class="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-500/40 font-semibold whitespace-nowrap">Phi kim</button>
-            <button onclick="filterPeriodicTable('halogen')" class="px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold whitespace-nowrap">Halogen</button>
-            <button onclick="filterPeriodicTable('noble')" class="px-2.5 py-1 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-500/40 font-semibold whitespace-nowrap">Khí hiếm</button>
+          <!-- Category Filter Buttons -->
+          <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1 text-xs" id="pt-filters">
+            <button class="pt-filter-btn active px-3 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-emerald-600 text-white font-bold transition whitespace-nowrap" data-cat="all">Tất cả</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="alkali-metal">Kim loại kiềm</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="alkaline-earth">Kiềm thổ</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="transition-metal">Chuyển tiếp</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="post-transition">Sau chuyển tiếp</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="metalloid">Á kim</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="nonmetal">Phi kim</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="halogen">Halogen</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="noble-gas">Khí hiếm</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="lanthanide">Lanthanide</button>
+            <button class="pt-filter-btn px-2.5 py-1.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 font-semibold transition whitespace-nowrap" data-cat="actinide">Actinide</button>
           </div>
 
-          <!-- Periodic Table 18-column Grid Scroll Area -->
-          <div class="periodic-table-wrapper rounded-xl border border-slate-200 dark:border-slate-800 p-2 bg-slate-100/50 dark:bg-slate-900/50">
-            <div id="periodic-grid-container" class="periodic-grid">
-              <!-- Dynamically populated by simulation.js -->
-            </div>
-          </div>
-        </div>
+          <!-- Periodic Table Container (Scrollable) -->
+          <div class="periodic-table-wrapper rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-900/60 shadow-inner">
+            <!-- Bảng chính: 18 cột x 7 hàng -->
+            <div class="periodic-table" id="mainTable"></div>
 
-        <!-- Element Inspector Detail Card -->
-        <div id="element-inspector-card">
-          <!-- Dynamically populated on element select -->
+            <!-- Lanthanide & Actinide -->
+            <div class="spacer">Lanthanide & Actinide ↓</div>
+            <div class="lanthanides" id="lanthanides"></div>
+            <div class="actinides" id="actinides"></div>
+          </div>
+
+          <!-- Chú thích màu sắc (Legend) -->
+          <div class="legend">
+            <div class="legend-item"><div class="legend-color alkali-metal"></div>Kim loại kiềm</div>
+            <div class="legend-item"><div class="legend-color alkaline-earth"></div>Kiềm thổ</div>
+            <div class="legend-item"><div class="legend-color transition-metal"></div>Chuyển tiếp</div>
+            <div class="legend-item"><div class="legend-color post-transition"></div>Sau chuyển tiếp</div>
+            <div class="legend-item"><div class="legend-color metalloid"></div>Á kim</div>
+            <div class="legend-item"><div class="legend-color nonmetal"></div>Phi kim</div>
+            <div class="legend-item"><div class="legend-color halogen"></div>Halogen</div>
+            <div class="legend-item"><div class="legend-color noble-gas"></div>Khí hiếm</div>
+            <div class="legend-item"><div class="legend-color lanthanide"></div>Lanthanide</div>
+            <div class="legend-item"><div class="legend-color actinide"></div>Actinide</div>
+          </div>
         </div>
       </div>
 
@@ -427,6 +439,14 @@
     </div>
 
   </main>
+
+  <!-- Modal Chi Tiết Nguyên Tố -->
+  <div class="pt-modal" id="ptModal">
+    <div class="pt-modal-content" id="ptModalContent">
+      <span class="close-btn" id="closePtModal">&times;</span>
+      <div id="ptModalBody"></div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-6 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm text-center text-xs text-slate-500 dark:text-slate-400">
