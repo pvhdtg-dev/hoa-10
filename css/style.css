@@ -287,36 +287,137 @@ body {
   animation: pulse-subtle 3s infinite ease-in-out;
 }
 
-/* Quiz Option Hover & Active states */
+/* ==========================================================================
+   QUIZ & MCQ OPTION STYLING (High Contrast, Accessible & Modern EdTech Theme)
+   ========================================================================== */
 .quiz-option {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1.5px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1e293b;
+  text-align: left;
+  font-size: 0.825rem;
+  font-weight: 500;
+  line-height: 1.45;
   cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  user-select: none;
 }
-.quiz-option:hover:not(.disabled) {
+
+.dark .quiz-option {
+  border-color: #334155;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quiz-option:hover:not(:disabled) {
+  border-color: #10b981;
+  background-color: #f0fdf4;
   transform: translateY(-1px);
-  border-color: #6366f1;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.12);
 }
 
+.dark .quiz-option:hover:not(:disabled) {
+  border-color: #34d399;
+  background-color: rgba(6, 78, 59, 0.25);
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+}
+
+/* Option letter badge (A, B, C, D) */
+.quiz-option .opt-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 0.4rem;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+  transition: all 0.18s ease;
+}
+
+.dark .quiz-option .opt-badge {
+  background-color: #0f172a;
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.quiz-option .opt-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Ensure KaTeX text inside option matches container color */
+.quiz-option .katex {
+  color: inherit !important;
+}
+
+/* Correct Answer State (Emerald Green) */
 .quiz-option.correct {
-  background-color: #ecfdf5 !important;
   border-color: #10b981 !important;
+  background-color: #ecfdf5 !important;
   color: #065f46 !important;
-}
-.dark .quiz-option.correct {
-  background-color: rgba(6, 78, 59, 0.3) !important;
-  border-color: #059669 !important;
-  color: #6ee7b7 !important;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #10b981 !important;
 }
 
-.quiz-option.wrong {
-  background-color: #fef2f2 !important;
-  border-color: #ef4444 !important;
-  color: #991b1b !important;
+.dark .quiz-option.correct {
+  border-color: #34d399 !important;
+  background-color: rgba(6, 78, 59, 0.65) !important;
+  color: #a7f3d0 !important;
+  box-shadow: 0 0 0 1px #34d399 !important;
 }
+
+.quiz-option.correct .opt-badge {
+  background-color: #10b981 !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+}
+
+/* Wrong Answer State (Rose Red) */
+.quiz-option.wrong {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #ef4444 !important;
+}
+
 .dark .quiz-option.wrong {
-  background-color: rgba(127, 29, 29, 0.3) !important;
-  border-color: #dc2626 !important;
-  color: #fca5a5 !important;
+  border-color: #f43f5e !important;
+  background-color: rgba(136, 19, 55, 0.55) !important;
+  color: #fecdd3 !important;
+  box-shadow: 0 0 0 1px #f43f5e !important;
+}
+
+.quiz-option.wrong .opt-badge {
+  background-color: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+/* Dimmed / Unselected state after question is answered */
+.quiz-option.dimmed {
+  opacity: 0.45;
+  cursor: default !important;
+  filter: grayscale(25%);
+  pointer-events: none;
+}
+.quiz-option:disabled {
+  cursor: default;
 }
 
 /* Tab transitions */
@@ -398,3 +499,19 @@ canvas {
   max-height: 360px;
   display: block;
 }
+
+/* ==========================================================================
+   Color & High-Contrast Utility Fallbacks (Dark & Light Mode Harmony)
+   ========================================================================== */
+.dark .dark\:bg-slate-900\/60 { background-color: rgba(15, 23, 42, 0.6) !important; }
+.dark .dark\:bg-slate-900\/80 { background-color: rgba(15, 23, 42, 0.8) !important; }
+.dark .dark\:bg-slate-900\/90 { background-color: rgba(15, 23, 42, 0.9) !important; }
+.dark .dark\:bg-slate-800\/80 { background-color: rgba(30, 41, 59, 0.8) !important; }
+.dark .dark\:bg-emerald-950\/30 { background-color: rgba(2, 44, 34, 0.3) !important; }
+.dark .dark\:bg-emerald-950\/40 { background-color: rgba(2, 44, 34, 0.4) !important; }
+.dark .dark\:bg-indigo-950\/30 { background-color: rgba(30, 27, 75, 0.3) !important; }
+.dark .dark\:bg-indigo-950\/40 { background-color: rgba(30, 27, 75, 0.4) !important; }
+.dark .dark\:bg-rose-950\/30 { background-color: rgba(76, 5, 25, 0.3) !important; }
+.dark .dark\:bg-rose-950\/40 { background-color: rgba(76, 5, 25, 0.4) !important; }
+.dark .dark\:border-slate-700 { border-color: rgb(51, 65, 85) !important; }
+.dark .dark\:border-slate-800 { border-color: rgb(30, 41, 59) !important; }

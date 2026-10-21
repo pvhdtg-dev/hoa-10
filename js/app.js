@@ -327,17 +327,17 @@ function renderMcqCard(q, num) {
         ${q.q}
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
         ${q.options.map((opt, oIdx) => `
           <button onclick="checkMcqAnswer('${q.id}', ${oIdx})" id="btn-${q.id}-${oIdx}"
-            class="opt-btn-${q.id} p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 text-left transition font-medium flex items-start gap-2">
-            <span class="w-5 h-5 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 flex items-center justify-center font-bold text-[10px] shrink-0">${String.fromCharCode(65 + oIdx)}</span>
-            <span class="flex-1">${opt}</span>
+            class="quiz-option opt-btn-${q.id}">
+            <span class="opt-badge">${String.fromCharCode(65 + oIdx)}</span>
+            <span class="opt-text">${opt}</span>
           </button>
         `).join('')}
       </div>
 
-      <div id="exp-${q.id}" class="hidden p-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <div id="exp-${q.id}" class="hidden p-3.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
         <!-- Explanation populated on answer -->
       </div>
     </div>
@@ -351,21 +351,26 @@ function checkMcqAnswer(qId, selectedIdx) {
   const isCorrect = selectedIdx === q.answer;
   const expEl = document.getElementById(`exp-${qId}`);
 
-  // Disable all option buttons for this question
+  // Disable all option buttons for this question & mark correct / wrong / dimmed
   document.querySelectorAll(`.opt-btn-${qId}`).forEach((btn, idx) => {
     btn.disabled = true;
     if (idx === q.answer) {
-      btn.className = "p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold flex items-start gap-2";
+      btn.classList.add("correct");
     } else if (idx === selectedIdx && !isCorrect) {
-      btn.className = "p-3 rounded-xl border-2 border-rose-500 bg-rose-50 dark:bg-rose-950 text-rose-700 dark:text-rose-300 flex items-start gap-2";
+      btn.classList.add("wrong");
+    } else {
+      btn.classList.add("dimmed");
     }
   });
 
   if (expEl) {
     expEl.classList.remove("hidden");
     expEl.innerHTML = `
-      <p class="font-bold ${isCorrect ? 'text-emerald-500' : 'text-rose-500'} mb-1">${isCorrect ? '✅ Chính xác!' : '❌ Chưa chính xác!'}</p>
-      <p>${q.explanation}</p>
+      <p class="font-bold ${isCorrect ? 'text-emerald-500' : 'text-rose-500'} mb-1.5 flex items-center gap-1.5 text-sm">
+        <span>${isCorrect ? '✅' : '❌'}</span>
+        <span>${isCorrect ? 'Chính xác!' : 'Chưa chính xác!'}</span>
+      </p>
+      <div class="text-slate-700 dark:text-slate-300">${q.explanation}</div>
     `;
     triggerKaTeX();
   }
@@ -393,14 +398,14 @@ function renderTfCard(q, num) {
 
       <div class="space-y-2">
         ${q.subQuestions.map((sub, sIdx) => `
-          <div class="p-3 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <div class="p-3 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
             <span class="flex-1 font-medium text-slate-800 dark:text-slate-200"><span class="font-bold">${String.fromCharCode(97 + sIdx)})</span> ${sub.text}</span>
             <div class="flex items-center gap-2 shrink-0">
-              <button onclick="checkTfSubAnswer('${q.id}', ${sIdx}, true)" id="btn-${q.id}-${sIdx}-true" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-bold hover:border-emerald-500 transition">Đúng</button>
-              <button onclick="checkTfSubAnswer('${q.id}', ${sIdx}, false)" id="btn-${q.id}-${sIdx}-false" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 font-bold hover:border-rose-500 transition">Sai</button>
+              <button onclick="checkTfSubAnswer('${q.id}', ${sIdx}, true)" id="btn-${q.id}-${sIdx}-true" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold hover:border-emerald-500 hover:text-emerald-500 transition">Đúng</button>
+              <button onclick="checkTfSubAnswer('${q.id}', ${sIdx}, false)" id="btn-${q.id}-${sIdx}-false" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold hover:border-rose-500 hover:text-rose-500 transition">Sai</button>
             </div>
           </div>
-          <div id="tf-exp-${q.id}-${sIdx}" class="hidden px-3 py-2 text-[11px] text-slate-500 dark:text-slate-400"></div>
+          <div id="tf-exp-${q.id}-${sIdx}" class="hidden px-3 py-2 text-[11px] text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-800 mt-1"></div>
         `).join('')}
       </div>
     </div>
@@ -421,9 +426,9 @@ function checkTfSubAnswer(qId, subIdx, userChoice) {
   btnFalse.disabled = true;
 
   if (userChoice) {
-    btnTrue.className = `px-3 py-1.5 rounded-lg font-bold text-white ${isCorrect ? 'bg-emerald-600' : 'bg-rose-600'}`;
+    btnTrue.className = `px-3 py-1.5 rounded-lg font-bold text-white shadow-sm ${isCorrect ? 'bg-emerald-600 border border-emerald-500' : 'bg-rose-600 border border-rose-500'}`;
   } else {
-    btnFalse.className = `px-3 py-1.5 rounded-lg font-bold text-white ${isCorrect ? 'bg-emerald-600' : 'bg-rose-600'}`;
+    btnFalse.className = `px-3 py-1.5 rounded-lg font-bold text-white shadow-sm ${isCorrect ? 'bg-emerald-600 border border-emerald-500' : 'bg-rose-600 border border-rose-500'}`;
   }
 
   if (expDiv) {
@@ -500,7 +505,7 @@ function renderEssayList(container) {
         </div>
       </div>
 
-      <div class="p-4 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 whitespace-pre-line leading-relaxed">
+      <div class="p-4 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 whitespace-pre-line leading-relaxed">
         ${item.problem}
       </div>
 
@@ -583,11 +588,12 @@ function startTimedExam() {
           <div class="text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100">${q.q}</div>
 
           ${q.type === 'mcq' ? `
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
               ${q.options.map((opt, oIdx) => `
-                <label class="p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 flex items-center gap-2 cursor-pointer hover:border-emerald-500 transition">
-                  <input type="radio" name="exam_q_${q.id}" value="${oIdx}" onchange="recordExamAnswer('${q.id}', ${oIdx})" class="text-emerald-600 focus:ring-emerald-500" />
-                  <span>${opt}</span>
+                <label class="quiz-option cursor-pointer">
+                  <input type="radio" name="exam_q_${q.id}" value="${oIdx}" onchange="recordExamAnswer('${q.id}', ${oIdx})" class="accent-emerald-500 w-4 h-4 mt-0.5 shrink-0" />
+                  <span class="opt-badge">${String.fromCharCode(65 + oIdx)}</span>
+                  <span class="opt-text">${opt}</span>
                 </label>
               `).join('')}
             </div>
@@ -597,11 +603,11 @@ function startTimedExam() {
           ` : `
             <div class="space-y-2 text-xs">
               ${q.subQuestions.map((sub, sIdx) => `
-                <div class="p-2.5 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
-                  <span>${sub.text}</span>
-                  <div class="flex items-center gap-2">
-                    <label><input type="radio" name="exam_q_${q.id}_${sIdx}" value="true" onchange="recordExamTfAnswer('${q.id}', ${sIdx}, true)" /> Đúng</label>
-                    <label><input type="radio" name="exam_q_${q.id}_${sIdx}" value="false" onchange="recordExamTfAnswer('${q.id}', ${sIdx}, false)" /> Sai</label>
+                <div class="p-2.5 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-2">
+                  <span class="text-slate-800 dark:text-slate-200 font-medium">${sub.text}</span>
+                  <div class="flex items-center gap-3 text-xs font-semibold">
+                    <label class="flex items-center gap-1 cursor-pointer"><input type="radio" name="exam_q_${q.id}_${sIdx}" value="true" onchange="recordExamTfAnswer('${q.id}', ${sIdx}, true)" class="accent-emerald-500" /> Đúng</label>
+                    <label class="flex items-center gap-1 cursor-pointer"><input type="radio" name="exam_q_${q.id}_${sIdx}" value="false" onchange="recordExamTfAnswer('${q.id}', ${sIdx}, false)" class="accent-rose-500" /> Sai</label>
                   </div>
                 </div>
               `).join('')}
