@@ -1,0 +1,7 @@
+# Bỏ qua các file PDF sách giáo khoa dung lượng lớn để repo nhẹ & push nhanh
+*.pdf
+sgk/
+*.zip
+.DS_Store
+Thumbs.db
+__pycache__/

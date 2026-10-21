@@ -1,0 +1,155 @@
+/* Modern EdTech Theme for High School Chemistry 10 */
+:root {
+  --primary: #059669;
+  --primary-hover: #047857;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Periodic Table 18-column grid */
+.periodic-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+.periodic-grid {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(36px, 1fr));
+  gap: 4px;
+  min-width: 720px;
+}
+@media (min-width: 640px) {
+  .periodic-grid {
+    grid-template-columns: repeat(18, minmax(46px, 1fr));
+    gap: 6px;
+    min-width: 860px;
+  }
+}
+
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+.dark .glass-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+}
+
+/* KaTeX custom spacing & fraction display */
+.katex-display {
+  margin: 0.6em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2em 0;
+}
+.katex {
+  font-size: 1.08em;
+  text-rendering: auto;
+}
+
+/* Ensure fraction bars and vertical stacks never collapse */
+.katex .mfrac {
+  display: inline-block;
+  vertical-align: -0.5em;
+}
+.katex .frac-line {
+  display: block !important;
+  border-bottom: 1.5px solid currentColor !important;
+  width: 100% !important;
+  min-height: 1px !important;
+}
+
+/* Hide MathML tree to prevent duplicate rendering and translator interference */
+.katex-mathml, math {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.notranslate {
+  translate: no !important;
+}
+
+/* Animated badges & pulses */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.92; transform: scale(1.02); }
+}
+.pulse-badge {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+/* Quiz Option Hover & Active states */
+.quiz-option {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.quiz-option:hover:not(.disabled) {
+  transform: translateY(-1px);
+  border-color: #6366f1;
+}
+
+.quiz-option.correct {
+  background-color: #ecfdf5 !important;
+  border-color: #10b981 !important;
+  color: #065f46 !important;
+}
+.dark .quiz-option.correct {
+  background-color: rgba(6, 78, 59, 0.3) !important;
+  border-color: #059669 !important;
+  color: #6ee7b7 !important;
+}
+
+.quiz-option.wrong {
+  background-color: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #991b1b !important;
+}
+.dark .quiz-option.wrong {
+  background-color: rgba(127, 29, 29, 0.3) !important;
+  border-color: #dc2626 !important;
+  color: #fca5a5 !important;
+}
+
+/* Tab transitions */
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.tab-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Canvas styling */
+canvas {
+  touch-action: none;
+}
