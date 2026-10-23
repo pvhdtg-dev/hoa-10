@@ -3,19 +3,23 @@
 
 ---
 
-## 🗂️ BẢNG ĐỐI CHIẾU & THỨ TỰ SẮP XẾP ĐÚNG CỦA CÁC TRANG TÀI LIỆU
+## 🗂️ HỆ THỐNG FILE VĂN BẢN (TEXT) & THỨ TỰ BÀI HỌC
 
-Hệ thống các ảnh chụp đề cương trong thư mục đã được kiểm tra tính liên tục của nội dung và sắp xếp theo đúng thứ tự logic như sau:
+Đề cương ôn tập đã được số hóa toàn diện thành định dạng văn bản (text) chất lượng cao để thuận tiện chỉnh sửa, in ấn và chia sẻ:
+* 📄 **File văn bản thuần túy cho Word / In ấn:** [`DE_CUONG_ON_TAP_GKI_HOA_10.txt`](file:///d:/tài%20liệu/Hoá%2010/DE_CUONG_ON_TAP_GKI_HOA_10.txt)
+* 🌐 **Trang web học tập tương tác & In đề (Ctrl+P):** [`de-cuong-on-tap-gki.html`](file:///d:/tài%20liệu/Hoá%2010/de-cuong-on-tap-gki.html)
+* 📝 **Bản Markdown chi tiết chuẩn KaTeX:** [`DE_CUONG_ON_TAP_GKI_HOA_10_CHI_TIET.md`](file:///d:/tài%20liệu/Hoá%2010/DE_CUONG_ON_TAP_GKI_HOA_10_CHI_TIET.md)
 
-| STT Trang | Tên file đã chuẩn hóa trong `de_cuong_gki_anh/` | Tên file gốc ban đầu | Nội dung chi tiết trên trang |
-| :---: | :--- | :--- | :--- |
-| **Trang 1** | `Trang_01_Phan_I_Cau_01_den_08.jpg` | `1792766086332_...jpg` | Tiêu đề đề cương, thông tin học sinh; **Phần I: Trắc nghiệm lựa chọn** từ **Câu 1 đến Câu 7**, đầu **Câu 8**. |
-| **Trang 2** | `Trang_02_Phan_I_Cau_08_den_16.jpg` | `1792766086416_...jpg` | Phần I: Các phương án của **Câu 8**, tiếp tục từ **Câu 9 đến Câu 15**, đầu **Câu 16**. |
-| **Trang 3** | `Trang_03_Phan_I_Cau_16_den_24.jpg` | `1792766086511_...jpg` | Phần I: Các phương án của **Câu 16**, tiếp tục từ **Câu 17 đến Câu 24** (Mô hình AO, số lượng AO, spin). |
-| **Trang 4** | `Trang_04_Phan_I_Cau_25_den_32.jpg` | `1792766086571_...jpg` | Phần I: Từ **Câu 25 đến Câu 32** (Lớp, phân lớp, cấu hình electron); Phần mở đầu **Phần II: Đúng / Sai**. |
-| **Trang 5** | `Trang_05_Phan_II_Dung_Sai_Cau_01_den_03.jpg` | `1792766086636_...jpg` | **Phần II: Đúng / Sai** gồm **Câu 1** (Nguyên tử Na), **Câu 2** (Cấu tạo nguyên tử), **Câu 3** (Đồng vị Hydrogen). |
-| **Trang 6** | `Trang_06_Phan_II_Dung_Sai_Tiep_va_Tu_Luan_Cau_01_02.jpg` | `1792766086702_...jpg` | Phần II: **Bảng 4 ý phát biểu tổng quát**; **Phần III: Tự luận** gồm **Câu 1** (Hạt cơ bản), đầu **Câu 2** (Đồng vị Chlorine). |
-| **Trang 7** | `Trang_07_Phan_III_Tu_Luan_Cau_02_03_04.jpg` | `1792766086775_...jpg` | Phần III: **Câu 2** (tiếp), **Câu 3** (Cấu hình Mg), **Câu 4** (Nguyên tố có phân lớp ngoài cùng $3p^3$). |
+### Bảng đối chiếu cấu trúc các phần:
+
+| Phần | Tên nội dung | Số lượng | Chi tiết kiến thức |
+| :---: | :--- | :---: | :--- |
+| **Phần I (C1 - C8)** | Cấu tạo hạt nguyên tử | 8 câu | Khái niệm nguyên tử, hạt proton, neutron, electron, điện tích, khối lượng, ký hiệu nguyên tử. |
+| **Phần I (C9 - C16)** | Số khối & Đồng vị | 8 câu | Nguyên tố hóa học, số hiệu Z, số khối A, đồng vị, nguyên tử khối trung bình, bài toán hạt cơ bản. |
+| **Phần I (C17 - C24)** | Orbital nguyên tử (AO) | 8 câu | Mô hình hiện đại, đám mây electron, hình dạng AO s, AO p, số lượng AO, nguyên lí Pauli. |
+| **Phần I (C25 - C32)** | Lớp & Cấu hình electron | 8 câu | Mức năng lượng của lớp/phân lớp, số electron tối đa ($2n^2$), viết cấu hình e, phân loại nguyên tố s, p. |
+| **Phần II** | Trắc nghiệm Đúng / Sai | 4 câu (16 ý) | Câu 1 (Nguyên tử Na), Câu 2 (Cấu tạo nguyên tử), Câu 3 (Đồng vị H), Câu 4 (Nhận định chung). |
+| **Phần III** | Bài tập Tự luận trả lời ngắn | 4 bài | Bài 1 (Hạt p, n, e), Bài 2 (Đồng vị Cl), Bài 3 (Cấu hình Mg), Bài 4 (Nguyên tố phân lớp $3p^3$). |
 
 ---
 

@@ -1,0 +1,504 @@
+﻿================================================================================
+          ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HỌC KÌ I - MÔN HÓA HỌC 10
+              Chương trình Giáo dục Phổ thông 2018
+  (Bản văn bản chuẩn hóa - Đầy đủ đáp án, lời giải chi tiết & phương án tự luận)
+================================================================================
+
+Họ và tên học sinh: ............................................................
+Lớp: 10A.....       Trường: ....................................................
+
+================================================================================
+PHẦN I. CÂU HỎI TRẮC NGHIỆM NHIỀU LỰA CHỌN (32 CÂU)
+(Mỗi câu hỏi có 4 lựa chọn, học sinh chọn 01 đáp án đúng nhất)
+================================================================================
+
+Câu 1: Hạt mang điện tích dương trong hạt nhân nguyên tử là:
+A. Electron.
+B. Proton.
+C. Neutron.
+D. Photon.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Hạt nhân nguyên tử được cấu tạo từ hai loại hạt: proton mang điện tích dương (+1) và neutron không mang điện. Lớp vỏ chứa electron mang điện âm (-1). Photon là hạt ánh sáng, không cấu tạo nên nguyên tử.
+
+--------------------------------------------------------------------------------
+Câu 2: Hạt không mang điện nằm trong hạt nhân nguyên tử là:
+A. Electron.
+B. Proton.
+C. Neutron.
+D. Vỏ nguyên tử.
+--> ĐÁP ÁN: C
+[Lời giải chi tiết]: Trong hạt nhân nguyên tử, hạt neutron là hạt không mang điện tích (điện tích = 0).
+
+--------------------------------------------------------------------------------
+Câu 3: Hạt có khối lượng rất nhỏ và mang điện tích âm trong nguyên tử là:
+A. Proton.
+B. Neutron.
+C. Electron.
+D. Hạt nhân.
+--> ĐÁP ÁN: C
+[Lời giải chi tiết]: Hạt electron chuyển động ở lớp vỏ, mang điện tích âm (-1) và có khối lượng vô cùng nhỏ (khoảng 0,00055 amu, xấp xỉ bằng 1/1836 khối lượng của proton).
+
+--------------------------------------------------------------------------------
+Câu 4: Nguyên tử được cấu tạo bởi các hạt cơ bản là:
+A. Proton và neutron.
+B. Proton và electron.
+C. Electron và neutron.
+D. Proton, neutron và electron.
+--> ĐÁP ÁN: D
+[Lời giải chi tiết]: Hầu hết các nguyên tử đều được tạo nên từ 3 loại hạt cơ bản: proton (p), neutron (n) và electron (e).
+
+--------------------------------------------------------------------------------
+Câu 5: Điện tích của proton và electron lần lượt là:
+A. +1 và -1.
+B. -1 và +1.
+C. 0 và -1.
+D. +1 và 0.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Theo quy ước điện tích tương đối: proton mang điện tích +1, electron mang điện tích -1.
+
+--------------------------------------------------------------------------------
+Câu 6: Khối lượng của nguyên tử tập trung hầu hết ở:
+A. Vỏ nguyên tử.
+B. Hạt nhân nguyên tử.
+C. Các electron.
+D. Các lớp electron ngoài cùng.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Do khối lượng electron rất nhỏ không đáng kể so với proton và neutron, nên khối lượng nguyên tử hầu như tập trung toàn bộ ở hạt nhân nguyên tử.
+
+--------------------------------------------------------------------------------
+Câu 7: Trong nguyên tử, số hạt proton luôn bằng số hạt:
+A. Neutron.
+B. Electron (trong nguyên tử trung hòa).
+C. Nucleon.
+D. Khối lượng.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Do nguyên tử trung hòa về điện nên tổng điện tích dương của hạt nhân luôn bằng tổng điện tích âm của vỏ: Số proton (p) = Số electron (e) = Z.
+
+--------------------------------------------------------------------------------
+Câu 8: Ký hiệu nguyên tử biểu diễn đầy đủ thông tin về:
+A. Số hiệu nguyên tử và số khối.
+B. Chỉ số proton.
+C. Chỉ số neutron.
+D. Chỉ số electron hóa trị.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Kí hiệu nguyên tử có dạng (A/Z)X, cho biết đầy đủ số hiệu nguyên tử Z (bằng số p, số e) và số khối A (A = Z + N).
+
+--------------------------------------------------------------------------------
+Câu 9: Nguyên tố hóa học là tập hợp các nguyên tử có cùng:
+A. Số neutron.
+B. Số khối.
+C. Số proton.
+D. Số electron hóa trị.
+--> ĐÁP ÁN: C
+[Lời giải chi tiết]: Theo định nghĩa SGK: Nguyên tố hóa học là tập hợp các nguyên tử có cùng số proton trong hạt nhân (cùng điện tích hạt nhân, cùng số hiệu Z).
+
+--------------------------------------------------------------------------------
+Câu 10: Số hiệu nguyên tử (ký hiệu là Z) đặc trưng cho:
+A. Số proton trong hạt nhân.
+B. Số neutron.
+C. Tổng số hạt trong nguyên tử.
+D. Số khối của nguyên tử.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Số hiệu nguyên tử Z bằng số đơn vị điện tích hạt nhân và bằng số proton trong hạt nhân.
+
+--------------------------------------------------------------------------------
+Câu 11: Số khối (ký hiệu là A) của nguyên tử được tính bằng tổng:
+A. Số proton và số electron.
+B. Số proton và số neutron.
+C. Số neutron và số electron.
+D. Số hiệu nguyên tử và số electron.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Số khối A = Z + N = (Số proton) + (Số neutron).
+
+--------------------------------------------------------------------------------
+Câu 12: Các đồng vị của cùng một nguyên tố hóa học là những nguyên tử có:
+A. Cùng số proton, khác nhau số neutron.
+B. Cùng số neutron, khác nhau số proton.
+C. Cùng số khối, khác nhau số proton.
+D. Cùng số electron, khác nhau số proton.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Các đồng vị có cùng số proton Z nhưng khác nhau về số neutron N, do đó số khối A khác nhau.
+
+--------------------------------------------------------------------------------
+Câu 13: Nguyên tố X có số hiệu nguyên tử Z = 11. Số proton trong nguyên tử X là:
+A. 11.
+B. 12.
+C. 23.
+D. 10.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Số proton bằng đúng số hiệu nguyên tử: p = Z = 11 (nguyên tố Sodium - Na).
+
+--------------------------------------------------------------------------------
+Câu 14: Nguyên tử khối trung bình của một nguyên tố hóa học là:
+A. Khối lượng của nguyên tử nhẹ nhất.
+B. Khối lượng trung bình của các đồng vị tính theo tỉ lệ phần trăm số nguyên tử.
+C. Tổng số proton và neutron.
+D. Khối lượng của một nguyên tử bất kỳ.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Nguyên tử khối trung bình tính theo tỉ lệ phần trăm số nguyên tử của từng đồng vị tương ứng: A_tb = (A1.x1 + A2.x2 + ...) / 100.
+
+--------------------------------------------------------------------------------
+Câu 15: Cho nguyên tử Sodium (Na) có Z = 11, A = 23. Số neutron trong hạt nhân Na là:
+A. 11.
+B. 12.
+C. 23.
+D. 34.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Số neutron: N = A - Z = 23 - 11 = 12.
+
+--------------------------------------------------------------------------------
+Câu 16: Số neutron của một nguyên tố hóa học có Z = 6 và số khối A = 12?
+A. 6.
+B. 7.
+C. 8.
+D. 9.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Số neutron: N = A - Z = 12 - 6 = 6 (đồng vị Carbon-12).
+
+--------------------------------------------------------------------------------
+Câu 17: Theo mô hình hiện đại, các electron chuyển động xung quanh hạt nhân như thế nào?
+A. Theo những quỹ đạo tròn xác định.
+B. Không theo quỹ đạo xác định, tạo thành đám mây electron.
+C. Đứng yên tại các vị trí cố định.
+D. Theo quỹ đạo hình elip.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Theo mô hình hiện đại, electron chuyển động rất nhanh xung quanh hạt nhân không theo những quỹ đạo xác định, tạo thành đám mây electron.
+
+--------------------------------------------------------------------------------
+Câu 18: Khu vực không gian xung quanh hạt nhân mà tại đó xác suất tìm thấy electron lớn nhất được gọi là:
+A. Lớp electron.
+B. Phân lớp electron.
+C. Orbital nguyên tử (AO).
+D. Quỹ đạo Bohr.
+--> ĐÁP ÁN: C
+[Lời giải chi tiết]: Orbital nguyên tử (AO) là khu vực không gian quanh hạt nhân mà tại đó xác suất tìm thấy electron lớn nhất (khoảng 90%).
+
+--------------------------------------------------------------------------------
+Câu 19: Orbital s có hình dạng gì?
+A. Hình cầu.
+B. Hình số tám nổi.
+C. Hình phức tạp.
+D. Hình tròn dẹt.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Orbital s có dạng hình cầu đối xứng tâm quanh hạt nhân.
+
+--------------------------------------------------------------------------------
+Câu 20: Orbital p có hình dạng chủ yếu là:
+A. Hình cầu.
+B. Hình số tám nổi (hình bầu dục).
+C. Hình vuông.
+D. Hình trụ.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Orbital p có dạng hình số 8 nổi, gồm 3 orbital định hướng theo 3 trục không gian: px, py, pz.
+
+--------------------------------------------------------------------------------
+Câu 21: Số lượng orbital trong một phân lớp s là:
+A. 1.
+B. 3.
+C. 5.
+D. 7.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Phân lớp s luôn chỉ có duy nhất 1 orbital.
+
+--------------------------------------------------------------------------------
+Câu 22: Số lượng orbital tối đa trong một phân lớp p là:
+A. 1.
+B. 3.
+C. 5.
+D. 7.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Phân lớp p gồm 3 orbital nguyên tử: px, py, pz.
+
+--------------------------------------------------------------------------------
+Câu 23: Mỗi orbital nguyên tử chứa tối đa bao nhiêu electron?
+A. 1 electron.
+B. 2 electron.
+C. 6 electron.
+D. 8 electron.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Theo nguyên lí Pauli, mỗi AO chỉ chứa tối đa 2 electron và hai electron này có spin ngược chiều nhau.
+
+--------------------------------------------------------------------------------
+Câu 24: Phân lớp d chứa tối đa bao nhiêu orbital?
+A. 3 orbital.
+B. 5 orbital.
+C. 7 orbital.
+D. 1 orbital.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Phân lớp d gồm 5 orbital (chứa tối đa 5 x 2 = 10 electron).
+
+--------------------------------------------------------------------------------
+Câu 25: Các electron trên cùng một lớp có mức năng lượng:
+A. Hoàn toàn khác nhau.
+B. Gần bằng nhau.
+C. Bằng nhau tuyệt đối.
+D. Tăng dần theo số thứ tự phân lớp.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Các electron trên cùng một lớp có mức năng lượng gần bằng nhau. (Trên cùng một phân lớp thì bằng nhau).
+
+--------------------------------------------------------------------------------
+Câu 26: Ký hiệu các phân lớp trong một lớp electron được viết bằng các chữ cái thường là:
+A. s, p, d, f.
+B. K, L, M, N.
+C. 1, 2, 3, 4.
+D. a, b, c, d.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Phân lớp electron được kí hiệu bằng chữ cái thường: s, p, d, f. Còn lớp electron được kí hiệu bằng chữ cái in hoa: K, L, M, N...
+
+--------------------------------------------------------------------------------
+Câu 27: Số electron tối đa có trong lớp thứ n (với n = 1, 2, 3...) được tính theo công thức:
+A. n.
+B. 2n.
+C. 2n^2.
+D. n^2.
+--> ĐÁP ÁN: C
+[Lời giải chi tiết]: Số electron tối đa ở lớp thứ n (n <= 4) là 2n^2.
+
+--------------------------------------------------------------------------------
+Câu 28: Số electron tối đa có ở lớp thứ 2 (n = 2) là:
+A. 2.
+B. 8.
+C. 18.
+D. 32.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Thay n = 2 vào công thức 2n^2: Số e tối đa = 2 x 2^2 = 8 electron (gồm phân lớp 2s^2 và 2p^6).
+
+--------------------------------------------------------------------------------
+Câu 29: Cấu hình electron của nguyên tử (Z = 11) là:
+A. 1s^2 2s^2 2p^6 3s^1.
+B. 1s^2 2s^2 2p^5 3s^2.
+C. 1s^2 2s^2 2p^6.
+D. 1s^2 2s^1.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Điền 11 electron theo mức năng lượng tăng dần: 1s^2 2s^2 2p^6 3s^1 (Sodium - Na).
+
+--------------------------------------------------------------------------------
+Câu 30: Nguyên tử có Z = 12 có cấu hình electron lớp ngoài cùng là:
+A. 3s^1.
+B. 3s^2.
+C. 3s^2 3p^1.
+D. 2s^2 2p^6.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Cấu hình đầy đủ của Z = 12 (Mg) là 1s^2 2s^2 2p^6 3s^2. Lớp ngoài cùng là lớp thứ 3, cấu hình là 3s^2.
+
+--------------------------------------------------------------------------------
+Câu 31: Cấu hình electron nào sau đây biểu diễn nguyên tố khí hiếm (bền vững)?
+A. 1s^2 2s^2 2p^6.
+B. 1s^2 2s^2 2p^5.
+C. 1s^2 2s^2.
+D. 1s^2 2s^1.
+--> ĐÁP ÁN: A
+[Lời giải chi tiết]: Khí hiếm có 8 electron ở lớp ngoài cùng (bão hòa), cấu hình 1s^2 2s^2 2p^6 tương ứng với khí hiếm Neon (Ne, Z = 10).
+
+--------------------------------------------------------------------------------
+Câu 32: Nguyên tố có cấu hình electron phân lớp ngoài cùng là 3p^3 thuộc loại:
+A. Nguyên tố s.
+B. Nguyên tố p.
+C. Nguyên tố d.
+D. Nguyên tố f.
+--> ĐÁP ÁN: B
+[Lời giải chi tiết]: Vì electron cuối cùng được điền vào phân lớp p (3p^3) nên đây là nguyên tố p (Phosphorus - P).
+
+================================================================================
+PHẦN II. CÂU HỎI TRẮC NGHIỆM ĐÚNG / SAI
+(Mỗi câu hỏi có 4 ý a, b, c, d. Đánh dấu Đúng hoặc Sai kèm giải thích)
+================================================================================
+
+Câu 1: Cho nguyên tử X có ký hiệu Na có Z = 11 và số khối A = 23
+a) Nguyên tử X có 11 proton trong hạt nhân.
+   --> ĐÚNG (p = Z = 11)
+b) Số neutron của nguyên tử X là 12.
+   --> ĐÚNG (n = A - Z = 23 - 11 = 12)
+c) Tổng số hạt cơ bản (p, n, e) trong X là 34.
+   --> ĐÚNG (Tổng số hạt = 2Z + n = 2 x 11 + 12 = 34)
+d) Vỏ nguyên tử X có tổng cộng 11 electron.
+   --> ĐÚNG (e = Z = 11)
+
+--------------------------------------------------------------------------------
+Câu 2: Về thành phần cấu tạo và đặc điểm của nguyên tử
+a) Hạt nhân nguyên tử gồm các hạt proton và neutron.
+   --> ĐÚNG (Hầu hết hạt nhân nguyên tử đều cấu tạo từ proton và neutron).
+b) Electron chuyển động rất nhanh quanh hạt nhân không theo quỹ đạo xác định.
+   --> ĐÚNG (Mô hình hiện đại của đám mây electron).
+c) Khối lượng của nguyên tử tập trung chủ yếu ở lớp vỏ electron.
+   --> SAI (Khối lượng nguyên tử tập trung hầu hết ở HẠT NHÂN, vì electron ở vỏ có khối lượng rất nhỏ không đáng kể).
+d) Hạt electron mang điện tích âm, giá trị bằng -1.
+   --> ĐÚNG (Điện tích quy ước tương đối là -1).
+
+--------------------------------------------------------------------------------
+Câu 3: Xét các đồng vị của nguyên tố Hydrogen (H)
+a) Hydrogen có 3 đồng vị phổ biến trong tự nhiên.
+   --> ĐÚNG (Gồm Protium (1/1 H), Deuterium (2/1 H hay D) và Tritium (3/1 H hay T)).
+b) Hạt nhân của đồng vị Protium (1/1 H) không chứa neutron nào.
+   --> ĐÚNG (N = A - Z = 1 - 1 = 0).
+c) Đồng vị Deuterium (2/1 H) có số khối bằng 2 và chứa 1 neutron.
+   --> ĐÚNG (A = 2, Z = 1 => N = 2 - 1 = 1).
+d) Ba đồng vị của Hydrogen có tính chất hóa học cơ bản hoàn toàn khác nhau.
+   --> SAI (Các đồng vị có cùng số proton và cấu hình electron nên có TÍNH CHẤT HÓA HỌC TƯƠNG TỰ NHAU).
+
+--------------------------------------------------------------------------------
+Câu 4: Xét các nhận định tổng quát về mô hình nguyên tử và cấu tạo hạt
+a) Cấu hình electron biểu diễn sự phân bố các electron theo mức năng lượng.
+   --> ĐÚNG (Phân bố theo chiều mức năng lượng tăng dần).
+b) Khối lượng của proton xấp xỉ khối lượng của neutron.
+   --> ĐÚNG (m_p xấp xỉ m_n xấp xỉ 1 amu).
+c) Electron chuyển động có tốc độ rất lớn quanh hạt nhân.
+   --> ĐÚNG (Chuyển động tốc độ hàng nghìn km/s quanh hạt nhân).
+d) Trong mọi nguyên tử, số proton luôn bằng số neutron.
+   --> SAI (Trong nguyên tử, số proton luôn bằng SỐ ELECTRON do trung hòa điện; còn p và n hầu như không bằng nhau, ví dụ Na có 11p và 12n).
+
+================================================================================
+PHẦN III. BÀI TẬP TỰ LUẬN TRẢ LỜI NGẮN
+(Đề xuất phương án giải trước, sau đó tiến hành giải chi tiết)
+================================================================================
+
+--------------------------------------------------------------------------------
+BÀI 1: BÀI TOÁN XÁC ĐỊNH HẠT CƠ BẢN TRONG NGUYÊN TỬ X
+Đề bài: Cho nguyên tử X có tổng số hạt cơ bản (p, n, e) là 34, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 10.
+a) Tính số hạt từng loại (proton, neutron, electron) của nguyên tử X.
+b) Viết ký hiệu nguyên tử X và xác định số khối của X.
+
+[1. ĐỀ XUẤT PHƯƠNG ÁN GIẢI & CHIẾN LƯỢC TIẾP CẬN]:
+- Bước 1 (Phân tích bản chất hạt):
+  + Gọi p, n, e lần lượt là số hạt proton, neutron, electron trong nguyên tử X.
+  + Do nguyên tử trung hòa điện: p = e = Z.
+  + Hạt mang điện gồm proton và electron => Tổng số hạt mang điện là p + e = 2Z.
+  + Hạt không mang điện là neutron (n).
+- Bước 2 (Thiết lập hệ phương trình toán học):
+  + Tổng số hạt: 2Z + n = 34  (1)
+  + Hiệu số hạt mang điện và không mang điện: 2Z - n = 10  (2)
+- Bước 3 (Thuật toán giải):
+  + Cộng (1) và (2) vế theo vế để khử ẩn n: 4Z = 44 => Z = 11.
+  + Thay Z = 11 vào (1) để tìm n: n = 34 - 2(11) = 12.
+- Bước 4 (Xác định số khối và ký hiệu):
+  + Số khối: A = Z + n = 11 + 12 = 23.
+  + Tra cứu Z = 11 là Sodium (Na) => Kí hiệu nguyên tử là (23/11)Na.
+
+[2. LỜI GIẢI CHI TIẾT TỪNG BƯỚC]:
+a) Tính số hạt từng loại:
+- Gọi p, n, e lần lượt là số hạt proton, neutron, electron trong nguyên tử X.
+- Vì nguyên tử X trung hòa về điện nên: p = e = Z.
+- Theo đề bài, ta có hệ phương trình:
+    2Z + n = 34   (1)
+    2Z - n = 10   (2)
+- Lấy (1) cộng (2) vế theo vế:
+    4Z = 44  =>  Z = 11.
+- Thay Z = 11 vào (1):
+    n = 34 - 2 x 11 = 12.
+- Kết luận:
+    + Số proton: p = 11 hạt.
+    + Số electron: e = 11 hạt.
+    + Số neutron: n = 12 hạt.
+
+b) Viết ký hiệu nguyên tử X và xác định số khối:
+- Số khối của X là: A = Z + n = 11 + 12 = 23.
+- Với Z = 11, nguyên tố X là Sodium (kí hiệu: Na).
+- Ký hiệu nguyên tử của X là: (23/11)Na.
+
+--------------------------------------------------------------------------------
+BÀI 2: TÍNH NGUYÊN TỬ KHỐI TRUNG BÌNH VÀ SỐ NGUYÊN TỬ ĐỒNG VỊ CHLORINE
+Đề bài: Nguyên tố Chlorine (Cl) trong tự nhiên có 2 đồng vị bền là (35/17)Cl (chiếm 75%) và (37/17)Cl (chiếm 25%).
+a) Tính nguyên tử khối trung bình của nguyên tố Chlorine.
+b) Nếu có 200 nguyên tử chlorine trong mẫu, hãy tính số nguyên tử của đồng vị (35/17)Cl.
+
+[1. ĐỀ XUẤT PHƯƠNG ÁN GIẢI & CHIẾN LƯỢC TIẾP CẬN]:
+- Phần a: Sử dụng công thức tính nguyên tử khối trung bình của hỗn hợp đồng vị:
+    A_tb = (A1 x %x1 + A2 x %x2) / 100
+  với A1 = 35, %x1 = 75%; A2 = 37, %x2 = 25%.
+- Phần b: Tỉ lệ phần trăm của đồng vị chính là tỉ lệ về số lượng nguyên tử.
+  Do đó, trong mẫu N_tong = 200 nguyên tử, số nguyên tử đồng vị 35Cl bằng:
+    N(35Cl) = N_tong x (%35Cl / 100).
+
+[2. LỜI GIẢI CHI TIẾT TỪNG BƯỚC]:
+a) Nguyên tử khối trung bình của Chlorine:
+- Áp dụng công thức:
+    A_tb(Cl) = (35 x 75 + 37 x 25) / 100
+             = (2625 + 925) / 100
+             = 3550 / 100 = 35,5 amu.
+- Đáp số a: Nguyên tử khối trung bình của Chlorine là 35,5 amu.
+
+b) Tính số nguyên tử đồng vị (35/17)Cl trong mẫu 200 nguyên tử:
+- Số nguyên tử đồng vị (35/17)Cl là:
+    N(35Cl) = 200 x 75% = 200 x 0,75 = 150 (nguyên tử).
+- Đáp số b: Trong mẫu có 150 nguyên tử đồng vị (35/17)Cl (và 50 nguyên tử 37Cl).
+
+--------------------------------------------------------------------------------
+BÀI 3: CẤU HÌNH ELECTRON VÀ ĐẶC ĐIỂM NGUYÊN TỬ MAGNESIUM
+Đề bài: Cho nguyên tử Magnesium (Mg) có số hiệu nguyên tử Z = 12.
+a) Viết cấu hình electron đầy đủ của nguyên tử Mg theo các mức phân lớp.
+b) Cho biết Mg có bao nhiêu lớp electron và có bao nhiêu electron ở lớp ngoài cùng.
+
+[1. ĐỀ XUẤT PHƯƠNG ÁN GIẢI & CHIẾN LƯỢC TIẾP CẬN]:
+- Phần a:
+  + Xác định tổng số electron: e = Z = 12.
+  + Điền 12 electron theo thứ tự mức năng lượng tăng dần: 1s, 2s, 2p, 3s...
+  + Sức chứa tối đa: phân lớp s chứa tối đa 2e, phân lớp p chứa tối đa 6e.
+- Phần b:
+  + Đếm số lớp electron (số lượng tử chính n từ 1 đến 3).
+  + Xác định lớp ngoài cùng (lớp n = 3) và đếm tổng số electron có trong lớp đó.
+  + Mở rộng: Nêu tính chất kim loại để củng cố lý thuyết.
+
+[2. LỜI GIẢI CHI TIẾT TỪNG BƯỚC]:
+a) Cấu hình electron đầy đủ của nguyên tử Magnesium (Mg):
+- Với Z = 12, phân bố 12 electron vào các phân lớp:
+    1s^2 2s^2 2p^6 3s^2
+  (Cấu hình thu gọn: [Ne] 3s^2).
+
+b) Xác định số lớp electron và số electron lớp ngoài cùng:
+- Số lớp electron: Nguyên tử Mg có 3 lớp electron:
+    + Lớp 1 (n = 1): có 2 electron (1s^2).
+    + Lớp 2 (n = 2): có 8 electron (2s^2 2p^6).
+    + Lớp 3 (n = 3): có 2 electron (3s^2).
+- Số electron lớp ngoài cùng: Lớp ngoài cùng là lớp thứ 3, có 2 electron (ở phân lớp 3s^2).
+- Mở rộng: Vì có 2 electron ở lớp ngoài cùng nên Mg là một nguyên tố kim loại điển hình.
+
+--------------------------------------------------------------------------------
+BÀI 4: KHÔI PHỤC CẤU HÌNH NGUYÊN TỬ VÀ PHÂN TÍCH BẪY HẠT NHÂN
+Đề bài: Nguyên tử của nguyên tố A có cấu hình electron lớp ngoài cùng là 3p^3.
+a) Viết cấu hình electron đầy đủ của nguyên tử A.
+b) Xác định số hiệu nguyên tử Z của nguyên tố A và số electron có trong hạt nhân.
+
+[1. ĐỀ XUẤT PHƯƠNG ÁN GIẢI & CHIẾN LƯỢC TIẾP CẬN]:
+- Phần a: Vì lớp ngoài cùng kết thúc ở 3p^3, các phân lớp đứng trước có mức năng lượng thấp hơn (1s, 2s, 2p, 3s) đều đã được điền bão hòa electron. Ghép lại thu được cấu hình đầy đủ.
+- Phần b:
+  + Tính tổng số electron e = 2 + 2 + 6 + 2 + 3 = 15 => Z = p = e = 15 (Phosphorus - P).
+  + CẢNH BÁO BẪY TƯ DUY: Hạt nhân nguyên tử CHỈ CHỨA PROTON VÀ NEUTRON, hoàn toàn KHÔNG CÓ ELECTRON trong hạt nhân. Do đó số electron trong hạt nhân bằng 0.
+  + Lưu ý phòng ngừa lỗi đề bài: Nếu giáo viên gõ nhầm ý định hỏi 'số electron trong nguyên tử' hoặc 'số proton trong hạt nhân', giá trị đó là 15. Ta sẽ trình bày cả hai góc nhìn để học sinh đạt điểm tối đa.
+
+[2. LỜI GIẢI CHI TIẾT TỪNG BƯỚC]:
+a) Cấu hình electron đầy đủ của nguyên tử A:
+- Các phân lớp bên trong bão hòa electron: 1s^2 2s^2 2p^6 3s^2.
+- Cấu hình hoàn chỉnh:
+    1s^2 2s^2 2p^6 3s^2 3p^3
+  (Cấu hình thu gọn: [Ne] 3s^2 3p^3).
+
+b) Số hiệu nguyên tử Z và số electron trong hạt nhân:
+- Số hiệu nguyên tử Z:
+  + Tổng số electron trong nguyên tử A: e = 2 + 2 + 6 + 2 + 3 = 15.
+  + Vì nguyên tử trung hòa điện: Z = p = e = 15 (nguyên tố Phosphorus, kí hiệu: P).
+- Số electron có trong hạt nhân:
+  + Theo bản chất cấu tạo nguyên tử, electron chỉ chuyển động ở lớp vỏ xung quanh hạt nhân, hạt nhân chỉ chứa proton và neutron.
+  + Do đó: Số electron có trong hạt nhân bằng 0.
+  (Ghi chú: Nếu đề thi có sự nhầm lẫn câu từ muốn hỏi về số electron của nguyên tử hoặc số proton trong hạt nhân, giá trị đó là 15).
+
+================================================================================
+BẢNG TỔNG HỢP ĐÁP ÁN NHANH TOÀN BỘ ĐỀ CƯƠNG
+================================================================================
+Phần I (Trắc nghiệm lựa chọn):
+1.B   2.C   3.C   4.D   5.A   6.B   7.B   8.A
+9.C  10.A  11.B  12.A  13.A  14.B  15.B  16.A
+17.B 18.C  19.A  20.B  21.A  22.B  23.B  24.B
+25.B 26.A  27.C  28.B  29.A  30.B  31.A  32.B
+
+Phần II (Đúng / Sai):
+Câu 1: a-Đ, b-Đ, c-Đ, d-Đ
+Câu 2: a-Đ, b-Đ, c-S, d-Đ
+Câu 3: a-Đ, b-Đ, c-Đ, d-S
+Câu 4: a-Đ, b-Đ, c-Đ, d-S
+
+Phần III (Tự luận):
+Bài 1: p = e = 11, n = 12; Số khối A = 23; Kí hiệu: (23/11)Na
+Bài 2: A_tb(Cl) = 35,5 amu; Số nguyên tử 35Cl = 150 nguyên tử
+Bài 3: Cấu hình: 1s^2 2s^2 2p^6 3s^2; Có 3 lớp e; Lớp ngoài cùng có 2e
+Bài 4: Cấu hình: 1s^2 2s^2 2p^6 3s^2 3p^3; Z = 15 (P); Số e trong hạt nhân = 0
+================================================================================
