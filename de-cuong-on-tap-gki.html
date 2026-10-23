@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đề Cương Ôn Tập Giữa Kì 1 - Hóa Học 10 (Có Lời Giải & Phương Án Giải)</title>
+  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/katex.min.css">
+  <script src="js/katex.min.js"></script>
+  <script src="js/auto-render.min.js"></script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      .page-break { page-break-before: always; }
+      body { background: white !important; color: black !important; font-size: 11pt; }
+      .explanation-box { display: block !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+  <!-- Header -->
+  <header class="bg-emerald-700 text-white shadow-md sticky top-0 z-30 no-print">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🧪</span>
+        <div>
+          <h1 class="font-bold text-lg leading-tight">ĐỀ CƯƠNG ÔN TẬP GKI - HÓA HỌC 10</h1>
+          <p class="text-xs text-emerald-100">Chương trình GDPT 2018 · Bản chuẩn hóa đầy đủ phương án & lời giải</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2 text-sm">
+        <button id="toggle-all-btn" onclick="toggleAllExplanations()" class="px-3 py-1.5 bg-emerald-800 hover:bg-emerald-900 rounded-lg text-white font-medium transition shadow-sm">
+          👁️ Ẩn/Hiện Lời Giải
+        </button>
+        <button onclick="window.print()" class="px-3 py-1.5 bg-white text-emerald-800 hover:bg-emerald-50 rounded-lg font-bold transition shadow-sm">
+          🖨️ In Đề Cương
+        </button>
+        <a href="index.html" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-white font-medium transition">
+          🏠 Về Ứng Dụng
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+    <!-- Tiêu đề in ấn -->
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 text-center">
+      <div class="border-b-2 border-emerald-600 pb-4 mb-4">
+        <h2 class="text-2xl sm:text-3xl font-black text-emerald-800 uppercase tracking-wide">
+          ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HỌC KÌ I
+        </h2>
+        <p class="text-slate-600 font-medium mt-1">Môn: Hóa học 10 – Bộ sách Kết nối tri thức / Cánh Diều / Chân trời sáng tạo</p>
+      </div>
+      <div class="flex flex-wrap justify-between items-center text-sm text-slate-600 italic px-2">
+        <span>Họ và tên học sinh: .....................................................................</span>
+        <span>Lớp: 10A..... &nbsp;|&nbsp; Năm học: 2026 - 2027</span>
+      </div>
+    </div>
+
+    <!-- Hộp sắp xếp các trang ảnh đề cương -->
+    <section class="bg-amber-50 border border-amber-200 rounded-2xl p-5 shadow-sm no-print">
+      <div class="flex items-center space-x-2 text-amber-900 font-bold text-base mb-2">
+        <span>📑</span>
+        <h3>KẾT QUẢ KIỂM TRA & SẮP XẾP ĐÚNG THỨ TỰ 7 TRANG ĐỀ CƯƠNG GỐC</h3>
+      </div>
+      <p class="text-sm text-amber-800 mb-4">
+        Các file ảnh đã được đối chiếu liên tục nội dung và lưu trữ tuần tự trong thư mục <code>de_cuong_gki_anh/</code>:
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2 text-center text-xs font-semibold">
+        <a href="de_cuong_gki_anh/Trang_01_Phan_I_Cau_01_den_08.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 1</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Phần I (C1 - C8)</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_02_Phan_I_Cau_08_den_16.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 2</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Phần I (C8 - C16)</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_03_Phan_I_Cau_16_den_24.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 3</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Phần I (C16 - C24)</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_04_Phan_I_Cau_25_den_32.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 4</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Phần I (C25 - C32)</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_05_Phan_II_Dung_Sai_Cau_01_den_03.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 5</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Đúng/Sai (C1 - C3)</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_06_Phan_II_Dung_Sai_Tiep_va_Tu_Luan_Cau_01_02.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 6</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Đ/S + Tự luận 1, 2</div>
+        </a>
+        <a href="de_cuong_gki_anh/Trang_07_Phan_III_Tu_Luan_Cau_02_03_04.jpg" target="_blank" class="p-2.5 bg-white border border-amber-300 rounded-xl hover:bg-amber-100 transition shadow-sm block text-amber-900">
+          <div>📄 Trang 7</div>
+          <div class="text-[10px] text-slate-500 font-normal mt-0.5">Tự luận 2, 3, 4</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Bắt đầu Phần I -->
+    <section class="space-y-6">
+      <div class="flex items-center space-x-3 border-b-2 border-slate-300 pb-2">
+        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">I</span>
+        <h3 class="text-xl font-bold text-slate-900">PHẦN I: TRẮC NGHIỆM NHIỀU LỰA CHỌN (32 CÂU)</h3>
+      </div>
+      <p class="text-sm text-slate-500 italic">Học sinh chọn 01 đáp án đúng nhất cho mỗi câu hỏi sau đây:</p>
+
+      <div class="grid grid-cols-1 gap-5" id="mcq-container">
+        <!-- Các câu trắc nghiệm sẽ được render ở đây -->
+      </div>
+    </section>
+
+    <!-- Phần II: Đúng Sai -->
+    <section class="space-y-6 pt-4">
+      <div class="flex items-center space-x-3 border-b-2 border-slate-300 pb-2">
+        <span class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold text-sm">II</span>
+        <h3 class="text-xl font-bold text-slate-900">PHẦN II: TRẮC NGHIỆM ĐÚNG / SAI</h3>
+      </div>
+      <p class="text-sm text-slate-500 italic">Mỗi câu hỏi gồm 4 ý (a, b, c, d). Thí sinh đánh dấu Đúng (Đ) hoặc Sai (S):</p>
+
+      <div class="space-y-6" id="tf-container">
+        <!-- Các câu đúng sai -->
+      </div>
+    </section>
+
+    <!-- Phần III: Tự Luận -->
+    <section class="space-y-6 pt-4">
+      <div class="flex items-center space-x-3 border-b-2 border-slate-300 pb-2">
+        <span class="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-sm">III</span>
+        <h3 class="text-xl font-bold text-slate-900">PHẦN III: BÀI TẬP TỰ LUẬN TRẢ LỜI NGẮN</h3>
+      </div>
+      <div class="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl text-amber-900 text-sm font-medium">
+        ⭐ <strong>Yêu cầu sư phạm:</strong> Mọi bài tập tự luận dưới đây đều được xây dựng theo quy trình 2 bước chuẩn:
+        <strong>(1) Đề xuất phương án & phương pháp giải trước</strong> &rarr; <strong>(2) Trình bày lời giải chi tiết, rõ ràng từng bước</strong>.
+      </div>
+
+      <div class="space-y-8" id="essay-container">
+        <!-- Các câu tự luận -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 bg-slate-800 text-slate-400 py-6 text-center text-sm no-print border-t border-slate-700">
+    <p>Đề Cương Ôn Tập Giữa Kì 1 Môn Hóa Học 10 · Chuẩn GDPT 2018</p>
+    <p class="text-xs mt-1 text-slate-500">Đã tích hợp KaTeX hiển thị công thức hóa học và giao diện in ấn tối ưu</p>
+  </footer>
+
+  <script>
+    const MCQ_DATA = [
+      {
+        id: 1,
+        q: "Hạt mang điện tích dương trong hạt nhân nguyên tử là:",
+        options: ["Electron.", "Proton.", "Neutron.", "Photon."],
+        answer: 1,
+        ansText: "B",
+        exp: "Hạt nhân nguyên tử cấu tạo gồm hạt proton mang điện tích dương (+1) và hạt neutron không mang điện. Lớp vỏ chứa electron mang điện âm (-1). Photon là hạt ánh sáng."
+      },
+      {
+        id: 2,
+        q: "Hạt không mang điện nằm trong hạt nhân nguyên tử là:",
+        options: ["Electron.", "Proton.", "Neutron.", "Vỏ nguyên tử."],
+        answer: 2,
+        ansText: "C",
+        exp: "Trong hạt nhân nguyên tử, hạt neutron là hạt không mang điện (điện tích bằng 0)."
+      },
+      {
+        id: 3,
+        q: "Hạt có khối lượng rất nhỏ và mang điện tích âm trong nguyên tử là:",
+        options: ["Proton.", "Neutron.", "Electron.", "Hạt nhân."],
+        answer: 2,
+        ansText: "C",
+        exp: "Hạt electron chuyển động ở lớp vỏ nguyên tử mang điện âm (-1) và có khối lượng vô cùng nhỏ ($m_e \\approx 0{,}00055\\text{ amu} \\approx \\frac{1}{1836} m_p$)."
+      },
+      {
+        id: 4,
+        q: "Nguyên tử được cấu tạo bởi các hạt cơ bản là:",
+        options: ["Proton và neutron.", "Proton và electron.", "Electron và neutron.", "Proton, neutron và electron."],
+        answer: 3,
+        ansText: "D",
+        exp: "Hầu hết mọi nguyên tử đều được tạo nên từ 3 loại hạt cơ bản: proton (p), neutron (n) ở hạt nhân và electron (e) ở lớp vỏ."
+      },
+      {
+        id: 5,
+        q: "Điện tích của proton và electron lần lượt là:",
+        options: ["+1 và -1.", "-1 và +1.", "0 và -1.", "+1 và 0."],
+        answer: 0,
+        ansText: "A",
+        exp: "Theo điện tích tương đối: proton mang điện tích +1, electron mang điện tích -1."
+      },
+      {
+        id: 6,
+        q: "Khối lượng của nguyên tử tập trung hầu hết ở:",
+        options: ["Vỏ nguyên tử.", "Hạt nhân nguyên tử.", "Các electron.", "Các lớp electron ngoài cùng."],
+        answer: 1,
+        ansText: "B",
+        exp: "Vì khối lượng của electron rất bé không đáng kể so với proton và neutron, nên khối lượng nguyên tử tập trung hầu hết ở hạt nhân nguyên tử ($m_{\\text{nguyên tử}} \\approx m_{\\text{hạt nhân}}$)."
+      },
+      {
+        id: 7,
+        q: "Trong nguyên tử, số hạt proton luôn bằng số hạt:",
+        options: ["Neutron.", "Electron (trong nguyên tử trung hòa).", "Nucleon.", "Khối lượng."],
+        answer: 1,
+        ansText: "B",
+        exp: "Nguyên tử trung hòa về điện nên tổng điện tích dương phải bằng tổng điện tích âm: Số proton = Số electron."
+      },
+      {
+        id: 8,
+        q: "Ký hiệu nguyên tử biểu diễn đầy đủ thông tin về:",
+        options: ["Số hiệu nguyên tử và số khối.", "Chỉ số proton.", "Chỉ số neutron.", "Chỉ số electron hóa trị."],
+        answer: 0,
+        ansText: "A",
+        exp: "Kí hiệu nguyên tử $^{A}_{Z}\\text{X}$ biểu diễn đầy đủ số hiệu nguyên tử $Z$ (bằng số p, số e) và số khối $A$ ($A = Z + N$)."
+      },
+      {
+        id: 9,
+        q: "Nguyên tố hóa học là tập hợp các nguyên tử có cùng:",
+        options: ["Số neutron.", "Số khối.", "Số proton.", "Số electron hóa trị."],
+        answer: 2,
+        ansText: "C",
+        exp: "Nguyên tố hóa học là tập hợp các nguyên tử có cùng số đơn vị điện tích hạt nhân (cùng số proton trong hạt nhân, tức cùng $Z$)."
+      },
+      {
+        id: 10,
+        q: "Số hiệu nguyên tử (ký hiệu là Z) đặc trưng cho:",
+        options: ["Số proton trong hạt nhân.", "Số neutron.", "Tổng số hạt trong nguyên tử.", "Số khối của nguyên tử."],
+        answer: 0,
+        ansText: "A",
+        exp: "Số hiệu nguyên tử $Z$ bằng số đơn vị điện tích hạt nhân và bằng số proton trong hạt nhân của nguyên tử."
+      },
+      {
+        id: 11,
+        q: "Số khối (ký hiệu là A) của nguyên tử được tính bằng tổng:",
+        options: ["Số proton và số electron.", "Số proton và số neutron.", "Số neutron và số electron.", "Số hiệu nguyên tử và số electron."],
+        answer: 1,
+        ansText: "B",
+        exp: "Số khối $A$ bằng tổng số hạt proton ($Z$) và tổng số hạt neutron ($N$) trong hạt nhân: $A = Z + N$."
+      },
+      {
+        id: 12,
+        q: "Các đồng vị của cùng một nguyên tố hóa học là những nguyên tử có:",
+        options: ["Cùng số proton, khác nhau số neutron.", "Cùng số neutron, khác nhau số proton.", "Cùng số khối, khác nhau số proton.", "Cùng số electron, khác nhau số proton."],
+        answer: 0,
+        ansText: "A",
+        exp: "Đồng vị là các nguyên tử của cùng một nguyên tố hóa học (có cùng số proton $Z$) nhưng có số neutron khác nhau, do đó số khối $A$ khác nhau."
+      },
+      {
+        id: 13,
+        q: "Nguyên tố X có số hiệu nguyên tử Z = 11. Số proton trong nguyên tử X là:",
+        options: ["11.", "12.", "23.", "10."],
+        answer: 0,
+        ansText: "A",
+        exp: "Số proton bằng chính số hiệu nguyên tử: $p = Z = 11$ (đây là Sodium - Na)."
+      },
+      {
+        id: 14,
+        q: "Nguyên tử khối trung bình của một nguyên tố hóa học là:",
+        options: ["Khối lượng của nguyên tử nhẹ nhất.", "Khối lượng trung bình của các đồng vị tính theo tỉ lệ phần trăm số nguyên tử.", "Tổng số proton và neutron.", "Khối lượng của một nguyên tử bất kỳ."],
+        answer: 1,
+        ansText: "B",
+        exp: "Nguyên tử khối trung bình tính theo tỉ lệ phần trăm số nguyên tử của từng đồng vị tương ứng: $\\overline{A} = \\frac{\\sum A_i x_i}{100}$."
+      },
+      {
+        id: 15,
+        q: "Cho nguyên tử Sodium (Na) có Z = 11, A = 23. Số neutron trong hạt nhân Na là:",
+        options: ["11.", "12.", "23.", "34."],
+        answer: 1,
+        ansText: "B",
+        exp: "Số neutron: $N = A - Z = 23 - 11 = 12$."
+      },
+      {
+        id: 16,
+        q: "Số neutron của một nguyên tố hóa học có Z = 6 và số khối A = 12?",
+        options: ["6.", "7.", "8.", "9."],
+        answer: 0,
+        ansText: "A",
+        exp: "Số neutron: $N = A - Z = 12 - 6 = 6$ (nguyên tử Carbon-12)."
+      },
+      {
+        id: 17,
+        q: "Theo mô hình hiện đại, các electron chuyển động xung quanh hạt nhân như thế nào?",
+        options: ["Theo những quỹ đạo tròn xác định.", "Không theo quỹ đạo xác định, tạo thành đám mây electron.", "Đứng yên tại các vị trí cố định.", "Theo quỹ đạo hình elip."],
+        answer: 1,
+        ansText: "B",
+        exp: "Theo mô hình hiện đại, electron chuyển động rất nhanh quanh hạt nhân không theo quỹ đạo xác định, tạo thành đám mây electron."
+      },
+      {
+        id: 18,
+        q: "Khu vực không gian xung quanh hạt nhân mà tại đó xác suất tìm thấy electron lớn nhất được gọi là:",
+        options: ["Lớp electron.", "Phân lớp electron.", "Orbital nguyên tử (AO).", "Quỹ đạo Bohr."],
+        answer: 2,
+        ansText: "C",
+        exp: "Orbital nguyên tử (AO) là khu vực không gian quanh hạt nhân mà xác suất tìm thấy electron là lớn nhất (khoảng 90%)."
+      },
+      {
+        id: 19,
+        q: "Orbital s có hình dạng gì?",
+        options: ["Hình cầu.", "Hình số tám nổi.", "Hình phức tạp.", "Hình tròn dẹt."],
+        answer: 0,
+        ansText: "A",
+        exp: "Orbital $s$ có dạng hình cầu đối xứng tâm quanh hạt nhân trong không gian 3 chiều."
+      },
+      {
+        id: 20,
+        q: "Orbital p có hình dạng chủ yếu là:",
+        options: ["Hình cầu.", "Hình số tám nổi (hình bầu dục).", "Hình vuông.", "Hình trụ."],
+        answer: 1,
+        ansText: "B",
+        exp: "Orbital $p$ có dạng hình số tám nổi gồm 3 orbital hướng theo 3 trục tọa độ: $p_x, p_y, p_z$."
+      },
+      {
+        id: 21,
+        q: "Số lượng orbital trong một phân lớp s là:",
+        options: ["1.", "3.", "5.", "7."],
+        answer: 0,
+        ansText: "A",
+        exp: "Phân lớp $s$ luôn có duy nhất 1 orbital."
+      },
+      {
+        id: 22,
+        q: "Số lượng orbital tối đa trong một phân lớp p là:",
+        options: ["1.", "3.", "5.", "7."],
+        answer: 1,
+        ansText: "B",
+        exp: "Phân lớp $p$ gồm 3 orbital nguyên tử: $p_x, p_y, p_z$."
+      },
+      {
+        id: 23,
+        q: "Mỗi orbital nguyên tử chứa tối đa bao nhiêu electron?",
+        options: ["1 electron.", "2 electron.", "6 electron.", "8 electron."],
+        answer: 1,
+        ansText: "B",
+        exp: "Theo nguyên lí Pauli, mỗi AO chỉ chứa tối đa 2 electron và hai electron này có spin ngược chiều nhau."
+      },
+      {
+        id: 24,
+        q: "Phân lớp d chứa tối đa bao nhiêu orbital?",
+        options: ["3 orbital.", "5 orbital.", "7 orbital.", "1 orbital."],
+        answer: 1,
+        ansText: "B",
+        exp: "Phân lớp $d$ có 5 orbital nguyên tử (chứa tối đa $5 \\times 2 = 10$ electron)."
+      },
+      {
+        id: 25,
+        q: "Các electron trên cùng một lớp có mức năng lượng:",
+        options: ["Hoàn toàn khác nhau.", "Gần bằng nhau.", "Bằng nhau tuyệt đối.", "Tăng dần theo số thứ tự phân lớp."],
+        answer: 1,
+        ansText: "B",
+        exp: "Lớp electron gồm các electron có mức năng lượng gần bằng nhau. (Phân lớp gồm các electron có mức năng lượng bằng nhau)."
+      },
+      {
+        id: 26,
+        q: "Ký hiệu các phân lớp trong một lớp electron được viết bằng các chữ cái thường là:",
+        options: ["s, p, d, f.", "K, L, M, N.", "1, 2, 3, 4.", "a, b, c, d."],
+        answer: 0,
+        ansText: "A",
+        exp: "Các phân lớp electron được kí hiệu bằng chữ cái thường: $s, p, d, f$."
+      },
+      {
+        id: 27,
+        q: "Số electron tối đa có trong lớp thứ n (với n = 1, 2, 3...) được tính theo công thức:",
+        options: ["n.", "2n.", "2n².", "n²."],
+        answer: 2,
+        ansText: "C",
+        exp: "Số electron tối đa của lớp thứ $n$ ($n \\le 4$) là $2n^2$."
+      },
+      {
+        id: 28,
+        q: "Số electron tối đa có ở lớp thứ 2 (n = 2) là:",
+        options: ["2.", "8.", "18.", "32."],
+        answer: 1,
+        ansText: "B",
+        exp: "Số electron tối đa ở lớp thứ 2 ($L$) là $2 \\times 2^2 = 8$ (gồm phân lớp $2s^2$ và $2p^6$)."
+      },
+      {
+        id: 29,
+        q: "Cấu hình electron của nguyên tử (Z = 11) là:",
+        options: ["1s² 2s² 2p⁶ 3s¹.", "1s² 2s² 2p⁵ 3s².", "1s² 2s² 2p⁶.", "1s² 2s¹."],
+        answer: 0,
+        ansText: "A",
+        exp: "Nguyên tử có $Z = 11$ có 11 electron. Điền lần lượt theo mức năng lượng: $1s^2 2s^2 2p^6 3s^1$ (Sodium - Na)."
+      },
+      {
+        id: 30,
+        q: "Nguyên tử có Z = 12 có cấu hình electron lớp ngoài cùng là:",
+        options: ["3s¹.", "3s².", "3s² 3p¹.", "2s² 2p⁶."],
+        answer: 1,
+        ansText: "B",
+        exp: "Với $Z = 12$ (Mg), cấu hình đầy đủ là $1s^2 2s^2 2p^6 3s^2$. Lớp ngoài cùng là lớp 3 có cấu hình là $3s^2$."
+      },
+      {
+        id: 31,
+        q: "Cấu hình electron nào sau đây biểu diễn nguyên tố khí hiếm (bền vững)?",
+        options: ["1s² 2s² 2p⁶.", "1s² 2s² 2p⁵.", "1s² 2s².", "1s² 2s¹."],
+        answer: 0,
+        ansText: "A",
+        exp: "Cấu hình có 8 electron lớp ngoài cùng ($2s^2 2p^6$) là cấu hình bát thế đặc trưng của khí hiếm bền vững (Neon - Ne)."
+      },
+      {
+        id: 32,
+        q: "Nguyên tố có cấu hình electron phân lớp ngoài cùng là 3p³ thuộc loại:",
+        options: ["Nguyên tố s.", "Nguyên tố p.", "Nguyên tố d.", "Nguyên tố f."],
+        answer: 1,
+        ansText: "B",
+        exp: "Vì electron cuối cùng được điền vào phân lớp $p$ ($3p^3$) nên đây là nguyên tố p (Phosphorus - P)."
+      }
+    ];
+
+    const TF_DATA = [
+      {
+        id: 1,
+        title: "Cho nguyên tử X có ký hiệu Na có Z = 11 và số khối A = 23",
+        items: [
+          { text: "Nguyên tử X có 11 proton trong hạt nhân.", result: true, exp: "Số proton bằng số hiệu nguyên tử: $p = Z = 11$." },
+          { text: "Số neutron của nguyên tử X là 12.", result: true, exp: "Số neutron: $n = A - Z = 23 - 11 = 12$." },
+          { text: "Tổng số hạt cơ bản (p, n, e) trong X là 34.", result: true, exp: "Vì nguyên tử trung hòa nên $e = p = 11$. Tổng hạt: $11 + 12 + 11 = 34$." },
+          { text: "Vỏ nguyên tử X có tổng cộng 11 electron.", result: true, exp: "Số electron ở lớp vỏ bằng $e = Z = 11$." }
+        ]
+      },
+      {
+        id: 2,
+        title: "Về thành phần cấu tạo và đặc điểm của nguyên tử",
+        items: [
+          { text: "Hạt nhân nguyên tử gồm các hạt proton và neutron.", result: true, exp: "Hầu hết hạt nhân nguyên tử đều gồm proton và neutron." },
+          { text: "Electron chuyển động rất nhanh quanh hạt nhân không theo quỹ đạo xác định.", result: true, exp: "Theo mô hình hiện đại (cơ học lượng tử), electron chuyển động hỗn loạn cực nhanh tạo đám mây electron." },
+          { text: "Khối lượng của nguyên tử tập trung chủ yếu ở lớp vỏ electron.", result: false, exp: "Sai. Khối lượng electron rất nhỏ ($m_e \\approx \\frac{1}{1836} m_p$), nên khối lượng nguyên tử tập trung chủ yếu ở hạt nhân." },
+          { text: "Hạt electron mang điện tích âm, giá trị bằng -1.", result: true, exp: "Điện tích quy ước tương đối của electron là -1." }
+        ]
+      },
+      {
+        id: 3,
+        title: "Xét các đồng vị của nguyên tố Hydrogen (H)",
+        items: [
+          { text: "Hydrogen có 3 đồng vị phổ biến trong tự nhiên.", result: true, exp: "Hydrogen có 3 đồng vị: $^{1}_{1}\\text{H}$ (Protium), $^{2}_{1}\\text{H}$ (Deuterium, D) và $^{3}_{1}\\text{H}$ (Tritium, T)." },
+          { text: "Hạt nhân của đồng vị Protium ($^{1}_{1}\\text{H}$) không chứa neutron nào.", result: true, exp: "Với $^{1}_{1}\\text{H}$, $N = A - Z = 1 - 1 = 0$." },
+          { text: "Đồng vị Deuterium ($^{2}_{1}\\text{H}$) có số khối bằng 2 và chứa 1 neutron.", result: true, exp: "$A = 2, Z = 1 \\implies N = 2 - 1 = 1$." },
+          { text: "Ba đồng vị của Hydrogen có tính chất hóa học cơ bản hoàn toàn khác nhau.", result: false, exp: "Sai. Các đồng vị có cùng số proton và cấu hình electron nên có tính chất hóa học tương tự nhau." }
+        ]
+      },
+      {
+        id: 4,
+        title: "Xét các nhận định tổng quát về mô hình nguyên tử và cấu tạo hạt",
+        items: [
+          { text: "Cấu hình electron biểu diễn sự phân bố các electron theo mức năng lượng.", result: true, exp: "Cấu hình electron biểu diễn trật tự phân bố electron theo mức năng lượng tăng dần." },
+          { text: "Khối lượng của proton xấp xỉ khối lượng của neutron.", result: true, exp: "$m_p \\approx m_n \\approx 1\\text{ amu}$ (chênh lệch rất nhỏ)." },
+          { text: "Electron chuyển động có tốc độ rất lớn quanh hạt nhân.", result: true, exp: "Electron chuyển động với tốc độ hàng nghìn km/s quanh hạt nhân." },
+          { text: "Trong mọi nguyên tử, số proton luôn bằng số neutron.", result: false, exp: "Sai. Trong nguyên tử, số proton luôn bằng số electron do trung hòa điện; còn $p$ và $n$ hầu như không bằng nhau (ví dụ: $^{23}_{11}\\text{Na}$ có $11p$ và $12n$)." }
+        ]
+      }
+    ];
+
+    const ESSAY_DATA_LIST = [
+      {
+        id: 1,
+        title: "Bài 1: Xác định các loại hạt cơ bản trong nguyên tử X",
+        problem: "Cho nguyên tử $X$ có tổng số hạt cơ bản ($p, n, e$) là $34$, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là $10$.<br><strong>a)</strong> Tính số hạt từng loại (proton, neutron, electron) của nguyên tử $X$.<br><strong>b)</strong> Viết ký hiệu nguyên tử $X$ và xác định số khối của $X$.",
+        strategy: `
+          <ul class="list-disc pl-5 space-y-1.5">
+            <li><strong>Phân tích tính chất hạt:</strong> Gọi $p, n, e$ là số hạt trong $X$. Nguyên tử trung hòa điện nên $p = e = Z$. Hạt mang điện là $(p + e) = 2Z$; hạt không mang điện là $n$.</li>
+            <li><strong>Thiết lập hệ phương trình:</strong>
+              <div class="pl-4 my-1 font-mono text-emerald-800 text-xs sm:text-sm bg-emerald-50/70 p-2 rounded border border-emerald-200">
+                (1) Tổng số hạt: $2Z + n = 34$<br>
+                (2) Chênh lệch hạt mang điện: $2Z - n = 10$
+              </div>
+            </li>
+            <li><strong>Thuật toán giải:</strong> Cộng $(1) + (2)$ vế theo vế để khử $n$, tìm ra $Z$, sau đó thế $Z$ vào $(1)$ để tìm $n$.</li>
+            <li><strong>Xác định số khối và ký hiệu:</strong> Tính $A = Z + n$, tra cứu tên nguyên tố dựa trên $Z = 11$ (Sodium, kí hiệu Na) để viết kí hiệu $^{A}_{Z}\\text{X}$.</li>
+          </ul>
+        `,
+        solution: `
+          <div class="space-y-2">
+            <p><strong>a) Tính số hạt từng loại:</strong></p>
+            <p>• Trong nguyên tử $X$ trung hòa điện: $p = e = Z$.</p>
+            <p>• Tổng số hạt cơ bản: $2Z + n = 34 \\quad (1)$</p>
+            <p>• Số hạt mang điện nhiều hơn không mang điện là 10: $2Z - n = 10 \\quad (2)$</p>
+            <p>• Cộng hai phương trình: $4Z = 44 \\implies Z = 11$.</p>
+            <p>• Thay $Z = 11$ vào $(1)$: $n = 34 - 2(11) = 12$.</p>
+            <p>$\\implies$ <strong>Kết luận:</strong> Số proton $p = 11$, số electron $e = 11$, số neutron $n = 12$.</p>
+            <hr class="my-2 border-slate-200">
+            <p><strong>b) Xác định số khối và viết ký hiệu nguyên tử:</strong></p>
+            <p>• Số khối của $X$: $A = Z + n = 11 + 12 = 23$.</p>
+            <p>• Với $Z = 11$, nguyên tố $X$ là <strong>Sodium (Na)</strong>.</p>
+            <p>• Ký hiệu nguyên tử: <span class="font-bold text-emerald-700 text-base">$^{23}_{11}\\text{Na}$</span>.</p>
+          </div>
+        `
+      },
+      {
+        id: 2,
+        title: "Bài 2: Tính nguyên tử khối trung bình và số nguyên tử đồng vị Chlorine",
+        problem: "Nguyên tố Chlorine ($\\text{Cl}$) trong tự nhiên có 2 đồng vị bền là $^{35}_{17}\\text{Cl}$ (chiếm $75\\%$) và $^{37}_{17}\\text{Cl}$ (chiếm $25\\%$).<br><strong>a)</strong> Tính nguyên tử khối trung bình của nguyên tố Chlorine.<br><strong>b)</strong> Nếu có 200 nguyên tử chlorine trong mẫu, hãy tính số nguyên tử của đồng vị $^{35}_{17}\\text{Cl}$.",
+        strategy: `
+          <ul class="list-disc pl-5 space-y-1.5">
+            <li><strong>Phần a:</strong> Sử dụng công thức tính nguyên tử khối trung bình của hỗn hợp các đồng vị:
+              $$\\overline{A} = \\frac{A_1 \\cdot x_1 + A_2 \\cdot x_2}{100}$$
+              với $A_1 = 35, x_1 = 75\\%$ và $A_2 = 37, x_2 = 25\\%$. Thay số và bấm máy chính xác.
+            </li>
+            <li><strong>Phần b:</strong> Phần trăm của đồng vị trong tự nhiên cũng chính là tỉ lệ về số lượng nguyên tử của đồng vị đó.
+              Do đó, trong mẫu có $N_{\\text{tổng}} = 200$ nguyên tử, số nguyên tử đồng vị $^{35}\\text{Cl}$ được tính bằng:
+              $$N(^{35}\\text{Cl}) = N_{\\text{tổng}} \\times \\frac{\\%^{35}\\text{Cl}}{100}$$
+            </li>
+          </ul>
+        `,
+        solution: `
+          <div class="space-y-2">
+            <p><strong>a) Tính nguyên tử khối trung bình của Chlorine:</strong></p>
+            <p>• Áp dụng công thức:</p>
+            <p class="pl-4">$$\\overline{A}_{\\text{Cl}} = \\frac{35 \\times 75 + 37 \\times 25}{100} = \\frac{2625 + 925}{100} = \\frac{3550}{100} = 35{,}5\\text{ amu}$$</p>
+            <p>$\\implies$ <strong>Đáp số a:</strong> $\\overline{A}_{\\text{Cl}} = 35{,}5\\text{ amu}$.</p>
+            <hr class="my-2 border-slate-200">
+            <p><strong>b) Tính số nguyên tử đồng vị $^{35}_{17}\\text{Cl}$ trong 200 nguyên tử:</strong></p>
+            <p>• Vì đồng vị $^{35}_{17}\\text{Cl}$ chiếm $75\\%$ tổng số nguyên tử chlorine:</p>
+            <p class="pl-4">$$N(^{35}\\text{Cl}) = 200 \\times 75\\% = 200 \\times 0{,}75 = 150\\text{ (nguyên tử)}$$</p>
+            <p>$\\implies$ <strong>Đáp số b:</strong> Mẫu chứa <strong>150 nguyên tử</strong> $^{35}_{17}\\text{Cl}$.</p>
+          </div>
+        `
+      },
+      {
+        id: 3,
+        title: "Bài 3: Cấu hình electron và đặc điểm nguyên tử Magnesium",
+        problem: "Cho nguyên tử Magnesium ($\\text{Mg}$) có số hiệu nguyên tử $Z = 12$.<br><strong>a)</strong> Viết cấu hình electron đầy đủ của nguyên tử $\\text{Mg}$ theo các mức phân lớp.<br><strong>b)</strong> Cho biết $\\text{Mg}$ có bao nhiêu lớp electron và có bao nhiêu electron ở lớp ngoài cùng.",
+        strategy: `
+          <ul class="list-disc pl-5 space-y-1.5">
+            <li><strong>Phần a:</strong> Nguyên tử $\\text{Mg}$ có $e = Z = 12$. Điền tuần tự 12 electron vào các phân lớp theo mức năng lượng tăng dần ($1s, 2s, 2p, 3s$), chú ý sức chứa tối đa của phân lớp $s$ (2e) và phân lớp $p$ (6e).</li>
+            <li><strong>Phần b:</strong> Đếm số lớp electron (giá trị $n$ từ 1 đến 3). Xác định lớp ngoài cùng ($n = 3$), đếm số electron có trong lớp đó. Mở rộng nhận xét về tính kim loại để học sinh ghi nhớ.</li>
+          </ul>
+        `,
+        solution: `
+          <div class="space-y-2">
+            <p><strong>a) Cấu hình electron đầy đủ của $\\text{Mg}$:</strong></p>
+            <p>• Với $Z = 12$, phân bố 12 electron vào các phân lớp:</p>
+            <p class="pl-4 font-mono font-bold text-emerald-800 text-base">1s² 2s² 2p⁶ 3s²</p>
+            <p>*(Cấu hình rút gọn: $[\\text{Ne}] 3s^2$)*</p>
+            <hr class="my-2 border-slate-200">
+            <p><strong>b) Xác định số lớp và số electron lớp ngoài cùng:</strong></p>
+            <p>• <strong>Số lớp electron:</strong> $\\text{Mg}$ có <strong>3 lớp electron</strong>:</p>
+            <p class="pl-4 text-xs sm:text-sm text-slate-600">- Lớp 1 ($n=1$): có 2 electron ($1s^2$)<br>- Lớp 2 ($n=2$): có 8 electron ($2s^2 2p^6$)<br>- Lớp 3 ($n=3$): có 2 electron ($3s^2$)</p>
+            <p>• <strong>Số electron lớp ngoài cùng:</strong> Lớp ngoài cùng là lớp thứ 3 ($n = 3$), có <strong>2 electron</strong> (ở phân lớp $3s^2$).</p>
+            <p>*(Mở rộng: Vì có 2e lớp ngoài cùng nên Magnesium là kim loại điển hình).*</p>
+          </div>
+        `
+      },
+      {
+        id: 4,
+        title: "Bài 4: Khôi phục cấu hình nguyên tử và phân tích bẫy hạt nhân",
+        problem: "Nguyên tử của nguyên tố $A$ có cấu hình electron lớp ngoài cùng là $3p^3$.<br><strong>a)</strong> Viết cấu hình electron đầy đủ của nguyên tử $A$.<br><strong>b)</strong> Xác định số hiệu nguyên tử $Z$ của nguyên tố $A$ và số electron có trong hạt nhân.",
+        strategy: `
+          <ul class="list-disc pl-5 space-y-1.5">
+            <li><strong>Phần a:</strong> Vì lớp ngoài cùng kết thúc ở $3p^3$, các phân lớp có mức năng lượng thấp hơn đứng trước nó ($1s, 2s, 2p, 3s$) đều đã được điền bão hòa electron ($1s^2, 2s^2, 2p^6, 3s^2$). Ghép lại để có cấu hình đầy đủ.</li>
+            <li><strong>Phần b - Xác định Z:</strong> Tính tổng số electron: $e = 2 + 2 + 6 + 2 + 3 = 15 \\implies Z = p = e = 15$ (nguyên tố Phosphorus - P).</li>
+            <li><strong>Phần b - Phân tích câu hỏi \"số electron có trong hạt nhân\":</strong>
+              <div class="p-2 bg-rose-50 border border-rose-200 rounded text-rose-900 text-xs mt-1">
+                ⚠️ <strong>CẢNH BÁO BẪY TƯ DUY:</strong> Hạt nhân nguyên tử chỉ chứa <strong>proton</strong> và <strong>neutron</strong>, hoàn toàn <strong>KHÔNG CÓ electron trong hạt nhân</strong>! Do đó số electron trong hạt nhân bằng <strong>0</strong>.<br>
+                (Nếu giáo viên ra đề gõ nhầm ý định hỏi \"số electron trong nguyên tử\" hoặc \"số proton trong hạt nhân\", giá trị đó là 15. Ta sẽ trình bày cả hai để học sinh nắm chắc 100% bản chất).
+              </div>
+            </li>
+          </ul>
+        `,
+        solution: `
+          <div class="space-y-2">
+            <p><strong>a) Cấu hình electron đầy đủ của nguyên tử A:</strong></p>
+            <p>• Các phân lớp trước $3p$ bão hòa electron: $1s^2 2s^2 2p^6 3s^2$.</p>
+            <p>• Cấu hình hoàn chỉnh:</p>
+            <p class="pl-4 font-mono font-bold text-emerald-800 text-base">1s² 2s² 2p⁶ 3s² 3p³</p>
+            <p>*(Cấu hình rút gọn: $[\\text{Ne}] 3s^2 3p^3$)*</p>
+            <hr class="my-2 border-slate-200">
+            <p><strong>b) Số hiệu nguyên tử $Z$ và số electron trong hạt nhân:</strong></p>
+            <p>• <strong>Số hiệu nguyên tử $Z$:</strong></p>
+            <p class="pl-4">Tổng số electron của nguyên tử $A$ là: $2 + 2 + 6 + 2 + 3 = 15$.<br>Vì nguyên tử trung hòa điện nên $Z = p = e = 15$ (nguyên tố là <strong>Phosphorus</strong>, kí hiệu: $\\text{P}$).</p>
+            <p>• <strong>Số electron có trong hạt nhân:</strong></p>
+            <p class="pl-4">- Theo bản chất cấu tạo nguyên tử: Hạt nhân chỉ cấu tạo từ các hạt proton và neutron, các electron chỉ chuyển động ở lớp vỏ.<br>- Do đó: <strong>Số electron có trong hạt nhân bằng 0</strong>.</p>
+            <p class="pl-4 text-xs text-slate-500 italic">*(Ghi chú phòng ngừa: Nếu đề bài có lỗi gõ nhầm với ý hỏi \"số electron của nguyên tử\" hoặc \"số proton trong hạt nhân\", giá trị đó bằng 15)*.</p>
+          </div>
+        `
+      }
+    ];
+
+    // Render MCQ
+    function renderMCQ() {
+      const container = document.getElementById('mcq-container');
+      container.innerHTML = MCQ_DATA.map(q => `
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 transition hover:border-emerald-300">
+          <div class="flex items-start justify-between gap-3">
+            <div class="font-bold text-slate-900 text-base">
+              <span class="inline-block px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-xs font-black rounded-md mr-2">Câu ${q.id}</span>
+              ${q.q}
+            </div>
+            <button onclick="toggleSingleExp('mcq-exp-${q.id}')" class="no-print text-xs text-emerald-600 hover:text-emerald-800 font-semibold shrink-0 underline">
+              Chi tiết lời giải
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 text-sm">
+            ${q.options.map((opt, optIdx) => `
+              <div class="p-2.5 rounded-lg border flex items-center space-x-2 ${optIdx === q.answer ? 'bg-emerald-50/70 border-emerald-300 font-semibold text-emerald-950' : 'bg-slate-50 border-slate-200 text-slate-700'}">
+                <span class="w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold ${optIdx === q.answer ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-600'}">
+                  ${String.fromCharCode(65 + optIdx)}
+                </span>
+                <span>${opt}</span>
+                ${optIdx === q.answer ? '<span class="ml-auto text-emerald-600 text-xs font-black">✓ ĐÁP ÁN ĐÚNG</span>' : ''}
+              </div>
+            `).join('')}
+          </div>
+
+          <div id="mcq-exp-${q.id}" class="explanation-box mt-3.5 p-3.5 bg-slate-50 border-l-4 border-emerald-500 rounded-r-lg text-xs sm:text-sm text-slate-700 space-y-1">
+            <div class="font-bold text-emerald-800 flex items-center space-x-1">
+              <span>💡</span>
+              <span>Lời giải chi tiết:</span>
+            </div>
+            <div>${q.exp}</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render True/False
+    function renderTF() {
+      const container = document.getElementById('tf-container');
+      container.innerHTML = TF_DATA.map(c => `
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 space-y-4">
+          <div class="font-bold text-slate-900 text-base flex items-center space-x-2">
+            <span class="px-2.5 py-0.5 bg-teal-100 text-teal-800 text-xs font-black rounded-md">Câu ${c.id}</span>
+            <span>${c.title}</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs sm:text-sm">
+              <thead>
+                <tr class="bg-slate-100 text-slate-700 border-b border-slate-300 font-bold">
+                  <th class="p-2.5 w-12 text-center">Ý</th>
+                  <th class="p-2.5">Nội dung phát biểu</th>
+                  <th class="p-2.5 w-24 text-center">Đúng (Đ)</th>
+                  <th class="p-2.5 w-24 text-center">Sai (S)</th>
+                  <th class="p-2.5">Giải thích chi tiết</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                ${c.items.map((item, idx) => `
+                  <tr class="hover:bg-slate-50 transition">
+                    <td class="p-2.5 text-center font-bold text-slate-600">${String.fromCharCode(97 + idx)})</td>
+                    <td class="p-2.5 font-medium text-slate-800">${item.text}</td>
+                    <td class="p-2.5 text-center">
+                      ${item.result ? '<span class="inline-block px-2.5 py-0.5 bg-emerald-100 text-emerald-700 font-black rounded-md border border-emerald-300">✓ ĐÚNG</span>' : '<span class="text-slate-300 font-bold">—</span>'}
+                    </td>
+                    <td class="p-2.5 text-center">
+                      ${!item.result ? '<span class="inline-block px-2.5 py-0.5 bg-rose-100 text-rose-700 font-black rounded-md border border-rose-300">✗ SAI</span>' : '<span class="text-slate-300 font-bold">—</span>'}
+                    </td>
+                    <td class="p-2.5 text-slate-600 text-xs">${item.exp}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render Essay
+    function renderEssay() {
+      const container = document.getElementById('essay-container');
+      container.innerHTML = ESSAY_DATA_LIST.map(e => `
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-5">
+          <!-- Tiêu đề bài -->
+          <div class="border-b border-slate-200 pb-3">
+            <h4 class="text-lg font-black text-amber-900 flex items-center space-x-2">
+              <span class="px-2.5 py-0.5 bg-amber-100 text-amber-800 text-xs font-black rounded-md">TỰ LUẬN ${e.id}</span>
+              <span>${e.title}</span>
+            </h4>
+          </div>
+
+          <!-- Đề bài -->
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-slate-800 font-medium text-sm leading-relaxed">
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">📌 Đề bài:</div>
+            ${e.problem}
+          </div>
+
+          <!-- Bước 1: Đề xuất phương án giải -->
+          <div class="p-4 bg-amber-50/70 border border-amber-300 rounded-xl space-y-2">
+            <div class="flex items-center space-x-2 font-bold text-amber-900 text-sm">
+              <span class="text-base">🎯</span>
+              <span>1. ĐỀ XUẤT PHƯƠNG ÁN GIẢI & PHƯƠNG PHÁP TIẾP CẬN:</span>
+            </div>
+            <div class="text-xs sm:text-sm text-amber-950 leading-relaxed">
+              ${e.strategy}
+            </div>
+          </div>
+
+          <!-- Bước 2: Lời giải chi tiết -->
+          <div class="p-4 bg-emerald-50/60 border border-emerald-300 rounded-xl space-y-2">
+            <div class="flex items-center space-x-2 font-bold text-emerald-900 text-sm">
+              <span class="text-base">✍️</span>
+              <span>2. LỜI GIẢI CHI TIẾT TỪNG BƯỚC:</span>
+            </div>
+            <div class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+              ${e.solution}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleSingleExp(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.toggle('hidden');
+      }
+    }
+
+    let allVisible = true;
+    function toggleAllExplanations() {
+      allVisible = !allVisible;
+      const boxes = document.querySelectorAll('.explanation-box');
+      boxes.forEach(b => {
+        if (allVisible) {
+          b.classList.remove('hidden');
+        } else {
+          b.classList.add('hidden');
+        }
+      });
+      const btn = document.getElementById('toggle-all-btn');
+      btn.innerText = allVisible ? '👁️ Ẩn Lời Giải' : '👁️ Hiện Lời Giải';
+    }
+
+    // Init
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMCQ();
+      renderTF();
+      renderEssay();
+      if (window.renderMathInElement) {
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false }
+          ],
+          throwOnError: false
+        });
+      }
+    });
+  </script>
+</body>
+</html>
