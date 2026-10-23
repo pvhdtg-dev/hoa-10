@@ -1,16 +1,10 @@
-# 📚 ĐỀ CƯƠNG ÔN TẬP GIỮA HỌC KÌ I – MÔN HÓA HỌC 10
-*(Chương trình Giáo dục Phổ thông 2018 – Đầy đủ Lời giải chi tiết & Phương án giải Tự luận)*
+# 📚 ĐỀ CƯƠNG ÔN TẬP GIỮA HỌC KÌ I – HÓA HỌC 10
+## TRƯỜNG VIỆT MỸ (NĂM HỌC 2026 - 2027)
+*(Chương trình GDPT 2018 – Đầy đủ Lời giải chi tiết & Phương án giải Tự luận)*
 
 ---
 
-## 🗂️ HỆ THỐNG FILE VĂN BẢN (TEXT) & THỨ TỰ BÀI HỌC
-
-Đề cương ôn tập đã được số hóa toàn diện thành định dạng văn bản (text) chất lượng cao để thuận tiện chỉnh sửa, in ấn và chia sẻ:
-* 📄 **File văn bản thuần túy cho Word / In ấn:** [`DE_CUONG_ON_TAP_GKI_HOA_10.txt`](file:///d:/tài%20liệu/Hoá%2010/DE_CUONG_ON_TAP_GKI_HOA_10.txt)
-* 🌐 **Trang web học tập tương tác & In đề (Ctrl+P):** [`de-cuong-on-tap-gki.html`](file:///d:/tài%20liệu/Hoá%2010/de-cuong-on-tap-gki.html)
-* 📝 **Bản Markdown chi tiết chuẩn KaTeX:** [`DE_CUONG_ON_TAP_GKI_HOA_10_CHI_TIET.md`](file:///d:/tài%20liệu/Hoá%2010/DE_CUONG_ON_TAP_GKI_HOA_10_CHI_TIET.md)
-
-### Bảng đối chiếu cấu trúc các phần:
+### Bảng cấu trúc các phần ôn tập:
 
 | Phần | Tên nội dung | Số lượng | Chi tiết kiến thức |
 | :---: | :--- | :---: | :--- |
